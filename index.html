@@ -1,59 +1,16 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#17231d" />
-  <meta name="description" content="Luna en Villa Pelón — aventura educativa RPG." />
-  <title>Luna en Villa Pelón</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#11100d"><meta name="description" content="Luna en Villa Pelón — RPG educativo de exploración e identidad territorial.">
+<title>Luna en Villa Pelón</title><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main id="app" aria-live="polite">
-    <section id="screen-start" class="screen active">
-      <div class="title-card">
-        <div class="moon">☾</div>
-        <p class="eyebrow">UNA AVENTURA EDUCATIVA</p>
-        <h1>Luna en<br><span>Villa Pelón</span></h1>
-        <p class="tagline">Historias, personas y territorio.</p>
-        <button id="startBtn" class="primary">Comenzar aventura</button>
-        <button id="continueBtn" class="secondary hidden">Continuar partida</button>
-      </div>
-      <div class="start-note">Una historia ficticia inspirada en la memoria y el territorio de un pequeño pueblo.</div>
-    </section>
-
-    <section id="screen-intro" class="screen">
-      <div class="intro-scene">
-        <div class="intro-art" aria-hidden="true"><span class="sun">☀</span><span class="hill h1"></span><span class="hill h2"></span><span class="road"></span><span class="house"></span></div>
-        <div class="intro-panel">
-          <p class="eyebrow">CAPÍTULO 1</p>
-          <h2>Acompañá a Luna</h2>
-          <p id="introText">Una nueva habitante llega a Villa Pelón. Todavía no conoce sus caminos, sus historias ni a la gente que los guarda.</p>
-          <p id="introText2" class="muted">Tu aventura comienza con una pregunta: ¿qué hace que un lugar sea un pueblo?</p>
-          <div class="intro-actions"><button id="introNext" class="primary">Seguir</button><button id="introSkip" class="text-btn">Entrar al pueblo</button></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="screen-world" class="screen">
-      <div id="game-wrap">
-        <canvas id="game" width="960" height="540" tabindex="0" aria-label="Mundo de Villa Pelón"></canvas>
-        <div class="hud">
-          <div class="hud-left"><span class="badge">LUNA</span><span id="missionLabel">Explorá Villa Pelón</span></div>
-          <div class="hud-right"><button id="bookBtn" title="Recuerdos">▣</button><button id="pauseBtn" title="Pausa">Ⅱ</button></div>
-        </div>
-        <div id="hint" class="hint hidden">Presioná <b>E</b> para interactuar</div>
-        <div id="dialog" class="dialog hidden"><div class="dialog-name" id="dialogName"></div><div class="dialog-text" id="dialogText"></div><button id="dialogNext" class="dialog-next">Continuar ▸</button></div>
-        <div id="missionCard" class="overlay-card hidden"></div>
-        <div id="rewardCard" class="overlay-card hidden"></div>
-        <div id="pauseCard" class="overlay-card hidden">
-          <p class="eyebrow">PAUSA</p><h2>Villa Pelón</h2><p>Tu progreso se guarda automáticamente.</p><button id="resumeBtn" class="primary">Volver al juego</button><button id="restartBtn" class="secondary">Reiniciar partida</button>
-        </div>
-        <div id="bookCard" class="overlay-card hidden"><p class="eyebrow">LIBRO DE RECUERDOS</p><h2>Lo que Luna descubrió</h2><div id="bookContent"></div><button id="closeBook" class="secondary">Cerrar</button></div>
-        <div id="touchControls" aria-label="Controles táctiles"><button data-key="up">▲</button><div><button data-key="left">◀</button><button data-key="down">▼</button><button data-key="right">▶</button></div><button id="touchInteract">E</button></div>
-      </div>
-    </section>
-  </main>
-  <script src="app.js"></script>
-</body>
-</html>
+<body><main id="app">
+<section id="start" class="screen active"><div class="start-card"><p class="eyebrow">UNA AVENTURA EDUCATIVA</p><h1>Luna<br><span>en Villa Pelón</span></h1><p class="lead">Historias, personas y territorio se descubren caminando.</p><button id="startBtn" class="primary">Comenzar</button><small>El progreso se guarda automáticamente.</small></div></section>
+<section id="intro" class="screen"><div class="intro-card"><div class="mark">✦</div><p class="eyebrow">VILLA PELÓN</p><h2>Acompañá a Luna, una nueva habitante de Villa Pelón, a descubrir su historia.</h2><p>Llegó con pocas cosas y muchas preguntas. Antes de conocer el pueblo, tendrá que aprender a mirar: escuchar a sus habitantes, recorrer sus caminos y encontrar las pequeñas historias que todavía permanecen.</p><button id="enterBtn" class="primary">Entrar al pueblo</button></div></section>
+<section id="world" class="screen"><div class="hud"><div><b>VILLA PELÓN</b><span id="objective">Objetivo: conocé a Don Mateo</span></div><button id="pauseBtn" class="round">Ⅱ</button></div><canvas id="game" width="960" height="540"></canvas><div id="prompt" class="prompt hidden">E — Hablar</div><div class="touch"><button data-key="ArrowUp">▲</button><div><button data-key="ArrowLeft">◀</button><button data-key="ArrowDown">▼</button><button data-key="ArrowRight">▶</button></div></div></section>
+<section id="dialogue" class="screen overlay"><div class="box"><div id="speaker" class="speaker">Don Mateo</div><p id="dialogueText"></p><button id="nextDialogue" class="primary">Continuar</button></div></section>
+<section id="mission" class="screen overlay"><div class="box"><p class="eyebrow">PRIMERA MISIÓN</p><h2>El recuerdo que falta</h2><p>Don Mateo conserva un recuerdo del pueblo, pero le falta una parte. Visitá a Rosa y a Tomás para encontrar dos pistas.</p><div class="steps"><span id="rosaStep">○ Rosa</span><span id="tomasStep">○ Tomás</span></div><button id="acceptMission" class="primary">Aceptar misión</button></div></section>
+<section id="reward" class="screen overlay"><div class="box"><div class="mark">✦</div><p class="eyebrow">RECUERDO DESBLOQUEADO</p><h2>La memoria también vive en las personas.</h2><p>Aprendiste que un territorio no es solamente un lugar: también está hecho de trabajo, caminos, relatos y personas que lo habitan.</p><button id="closeReward" class="primary">Guardar y continuar</button></div></section>
+<div id="pause" class="pause hidden"><div class="box"><p class="eyebrow">PAUSA</p><h2>Luna en Villa Pelón</h2><button id="resume" class="primary">Volver al juego</button><button id="restart" class="secondary">Reiniciar partida</button></div></div>
+</main><script src="app.js"></script></body></html>
