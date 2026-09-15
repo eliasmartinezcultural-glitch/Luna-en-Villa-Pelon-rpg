@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#17231d" />
+  <meta name="description" content="Luna en Villa Pelón — aventura educativa RPG." />
+  <title>Luna en Villa Pelón</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app" aria-live="polite">
+    <section id="screen-start" class="screen active">
+      <div class="title-card">
+        <div class="moon">☾</div>
+        <p class="eyebrow">UNA AVENTURA EDUCATIVA</p>
+        <h1>Luna en<br><span>Villa Pelón</span></h1>
+        <p class="tagline">Historias, personas y territorio.</p>
+        <button id="startBtn" class="primary">Comenzar aventura</button>
+        <button id="continueBtn" class="secondary hidden">Continuar partida</button>
+      </div>
+      <div class="start-note">Una historia ficticia inspirada en la memoria y el territorio de un pequeño pueblo.</div>
+    </section>
+
+    <section id="screen-intro" class="screen">
+      <div class="intro-scene">
+        <div class="intro-art" aria-hidden="true"><span class="sun">☀</span><span class="hill h1"></span><span class="hill h2"></span><span class="road"></span><span class="house"></span></div>
+        <div class="intro-panel">
+          <p class="eyebrow">CAPÍTULO 1</p>
+          <h2>Acompañá a Luna</h2>
+          <p id="introText">Una nueva habitante llega a Villa Pelón. Todavía no conoce sus caminos, sus historias ni a la gente que los guarda.</p>
+          <p id="introText2" class="muted">Tu aventura comienza con una pregunta: ¿qué hace que un lugar sea un pueblo?</p>
+          <div class="intro-actions"><button id="introNext" class="primary">Seguir</button><button id="introSkip" class="text-btn">Entrar al pueblo</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-world" class="screen">
+      <div id="game-wrap">
+        <canvas id="game" width="960" height="540" tabindex="0" aria-label="Mundo de Villa Pelón"></canvas>
+        <div class="hud">
+          <div class="hud-left"><span class="badge">LUNA</span><span id="missionLabel">Explorá Villa Pelón</span></div>
+          <div class="hud-right"><button id="bookBtn" title="Recuerdos">▣</button><button id="pauseBtn" title="Pausa">Ⅱ</button></div>
+        </div>
+        <div id="hint" class="hint hidden">Presioná <b>E</b> para interactuar</div>
+        <div id="dialog" class="dialog hidden"><div class="dialog-name" id="dialogName"></div><div class="dialog-text" id="dialogText"></div><button id="dialogNext" class="dialog-next">Continuar ▸</button></div>
+        <div id="missionCard" class="overlay-card hidden"></div>
+        <div id="rewardCard" class="overlay-card hidden"></div>
+        <div id="pauseCard" class="overlay-card hidden">
+          <p class="eyebrow">PAUSA</p><h2>Villa Pelón</h2><p>Tu progreso se guarda automáticamente.</p><button id="resumeBtn" class="primary">Volver al juego</button><button id="restartBtn" class="secondary">Reiniciar partida</button>
+        </div>
+        <div id="bookCard" class="overlay-card hidden"><p class="eyebrow">LIBRO DE RECUERDOS</p><h2>Lo que Luna descubrió</h2><div id="bookContent"></div><button id="closeBook" class="secondary">Cerrar</button></div>
+        <div id="touchControls" aria-label="Controles táctiles"><button data-key="up">▲</button><div><button data-key="left">◀</button><button data-key="down">▼</button><button data-key="right">▶</button></div><button id="touchInteract">E</button></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
