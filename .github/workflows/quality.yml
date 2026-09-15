@@ -30,3 +30,35 @@ jobs:
           grep -q 'id="pauseBtn"' index.html
           grep -q 'id="resume"' index.html
           grep -q 'id="restart"' index.html
+          grep -q 'id="interactBtn"' index.html
+      - name: Validate screen architecture
+        run: |
+          grep -q '.screen.active' styles.css
+          grep -q '.world.active' styles.css
+          grep -q 'function show' app.js
+          grep -q 'screens.forEach' app.js
+      - name: Validate interaction paths
+        run: |
+          grep -Fq "$('startBtn').onclick" app.js
+          grep -Fq "$('enterBtn').onclick" app.js
+          grep -Fq "document.getElementById('interactBtn').addEventListener('click'" index.html
+          grep -Fq "e.key === 'Escape'" app.js
+          grep -Fq "localStorage.removeItem(SAVE_KEY)" app.js
+      - name: Validate complete journey
+        run: |
+          grep -Fq "function startGame() { show('intro'); }" app.js
+          grep -Fq "function enter()" app.js
+          grep -Fq "show('world')" app.js
+          grep -Fq "function interact()" app.js
+          grep -Fq "n.id === 'mateo' && !state.mission" app.js
+          grep -Fq "], 'mission');" app.js
+          grep -Fq "n.id === 'rosa' && state.mission && !state.rosa" app.js
+          grep -Fq "n.id === 'tomas' && state.mission && !state.tomas" app.js
+          grep -Fq "state.rosa && state.tomas && !state.reward" app.js
+          grep -Fq "state.reward = true" app.js
+          grep -Fq "localStorage.setItem(SAVE_KEY" app.js
+          grep -Fq "const raw = JSON.parse(localStorage.getItem(SAVE_KEY" app.js
+      - name: Validate web-first rules
+        run: |
+          grep -q 'ABRIR EL LINK' WORLD-LAW-V1.1-WEB.md
+          grep -q 'NO INSTALACIÓN' WORLD-LAW-V1.1-WEB.md
