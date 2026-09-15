@@ -1,0 +1,32 @@
+name: Quality Gate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  core-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate JavaScript syntax
+        run: node --check app.js
+      - name: Validate required files
+        run: |
+          test -f index.html
+          test -f styles.css
+          test -f app.js
+          test -f WORLD-LAW.md
+          test -f WORLD-LAW-V1.1-WEB.md
+          test -f QUALITY-GATE.md
+      - name: Validate core DOM hooks
+        run: |
+          grep -q 'id="game"' index.html
+          grep -q 'id="startBtn"' index.html
+          grep -q 'id="enterBtn"' index.html
+          grep -q 'id="nextDialogue"' index.html
+          grep -q 'id="acceptMission"' index.html
+          grep -q 'id="pauseBtn"' index.html
+          grep -q 'id="resume"' index.html
+          grep -q 'id="restart"' index.html
