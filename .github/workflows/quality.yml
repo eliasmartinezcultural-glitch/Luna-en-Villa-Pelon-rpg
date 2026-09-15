@@ -30,3 +30,21 @@ jobs:
           grep -q 'id="pauseBtn"' index.html
           grep -q 'id="resume"' index.html
           grep -q 'id="restart"' index.html
+          grep -q 'id="interactBtn"' index.html
+      - name: Validate screen architecture
+        run: |
+          grep -q '.screen.active' styles.css
+          grep -q '.world.active' styles.css
+          grep -q 'function show' app.js
+          grep -q "screens.forEach" app.js
+      - name: Validate interaction paths
+        run: |
+          grep -q "\$('startBtn'\).onclick" app.js
+          grep -q "\$('enterBtn'\).onclick" app.js
+          grep -q "\$('interactBtn'\).onclick" app.js
+          grep -q "e.key === 'Escape'" app.js
+          grep -q "localStorage.removeItem(SAVE_KEY)" app.js
+      - name: Validate web-first rules
+        run: |
+          grep -q 'ABRIR EL LINK' WORLD-LAW-V1.1-WEB.md
+          grep -q 'NO INSTALACIÓN' WORLD-LAW-V1.1-WEB.md
