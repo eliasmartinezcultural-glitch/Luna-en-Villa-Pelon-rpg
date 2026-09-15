@@ -36,14 +36,14 @@ jobs:
           grep -q '.screen.active' styles.css
           grep -q '.world.active' styles.css
           grep -q 'function show' app.js
-          grep -q "screens.forEach" app.js
+          grep -q 'screens.forEach' app.js
       - name: Validate interaction paths
         run: |
-          grep -q "\$('startBtn'\).onclick" app.js
-          grep -q "\$('enterBtn'\).onclick" app.js
-          grep -q "\$('interactBtn'\).onclick" app.js
-          grep -q "e.key === 'Escape'" app.js
-          grep -q "localStorage.removeItem(SAVE_KEY)" app.js
+          grep -Fq "$('startBtn').onclick" app.js
+          grep -Fq "$('enterBtn').onclick" app.js
+          grep -Fq "$('interactBtn').onclick" app.js
+          grep -Fq "e.key === 'Escape'" app.js
+          grep -Fq "localStorage.removeItem(SAVE_KEY)" app.js
       - name: Validate web-first rules
         run: |
           grep -q 'ABRIR EL LINK' WORLD-LAW-V1.1-WEB.md
