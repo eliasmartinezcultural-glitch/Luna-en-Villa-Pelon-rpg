@@ -10,7 +10,7 @@
 </head>
 <body>
 <main id="app">
-<section id="start" class="screen active"><div class="start-card"><p class="eyebrow">UNA AVENTURA WEB</p><h1>Luna<br><span>en Villa Pelón</span></h1><p class="lead">Historias, personas y territorio se descubren caminando.</p><button id="startBtn" class="primary">Comenzar</button><small>Se juega desde el navegador. El progreso se guarda automáticamente.</small></div></section>
+<section id="start" class="screen active"><div class="start-card"><p class="eyebrow">UNA AVENTURA WEB</p><h1>Luna<br><span>en Villa Pelón</span></h1><p class="lead">Historias, personas y territorio se descubren caminando.</p><button id="startBtn" class="primary">Comenzar aventura</button><small>Se juega desde el navegador. El progreso se guarda automáticamente.</small></div></section>
 <section id="intro" class="screen"><div class="intro-card"><div class="mark">✦</div><p class="eyebrow">VILLA PELÓN</p><h2>Acompañá a Luna, una nueva habitante de Villa Pelón, a descubrir su historia.</h2><p>Llegó con pocas cosas y muchas preguntas. Antes de conocer el pueblo, tendrá que aprender a mirar: escuchar a sus habitantes, recorrer sus caminos y encontrar las pequeñas historias que todavía permanecen.</p><button id="enterBtn" class="primary">Entrar al pueblo</button></div></section>
 <section id="world" class="screen world"><div class="hud"><div><b>VILLA PELÓN</b><span id="objective">Objetivo: conocé a Don Mateo</span></div><button id="pauseBtn" class="round" aria-label="Pausar juego">Ⅱ</button></div><canvas id="game" width="960" height="540" aria-label="Mundo de Villa Pelón"></canvas><div id="prompt" class="prompt hidden">E — Hablar</div><button id="interactBtn" class="interact" aria-label="Intentar hablar">Hablar</button><div class="touch" aria-label="Controles de movimiento"><button data-key="ArrowUp" aria-label="Arriba">▲</button><div><button data-key="ArrowLeft" aria-label="Izquierda">◀</button><button data-key="ArrowDown" aria-label="Abajo">▼</button><button data-key="ArrowRight" aria-label="Derecha">▶</button></div></div></section>
 <section id="dialogue" class="screen overlay"><div class="box"><div id="speaker" class="speaker">Don Mateo</div><p id="dialogueText"></p><button id="nextDialogue" class="primary">Continuar</button></div></section>
@@ -20,5 +20,6 @@
 </main>
 <script src="app.js"></script>
 <script>document.getElementById('interactBtn').addEventListener('click',function(){if(typeof interact==='function')interact();});</script>
+<script src="experience.js"></script>
 </body>
 </html>
