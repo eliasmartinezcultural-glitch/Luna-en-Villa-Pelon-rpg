@@ -1,17 +1,11 @@
 const $ = id => document.getElementById(id);
 
-/*
- * LUNA EN VILLA PELÓN — MOTOR BASE V1.1
- * LEYES MUNDIALES:
- * - RPG familiar de exploración, vida, paseo, misiones y aprendizaje.
- * - Se juega desde un enlace web, sin instalación ni descarga obligatoria.
- * - El núcleo debe funcionar en PC, tablet y móvil con recursos modestos.
- * - Villa Pelón es el único nombre territorial visible dentro del juego.
- * - Los datos históricos reales deben verificarse antes de presentarse como verdaderos.
+/* LUNA EN VILLA PELÓN — MOTOR CONSOLIDADO V1.0.0
+ * Esta versión prioriza estabilidad, recuperación y compatibilidad web.
  */
-
+const PRODUCT_VERSION = 'V1.0.0';
 const SAVE_KEY = 'lunaVillaPelon';
-const SAVE_VERSION = 3;
+const SAVE_VERSION = 4;
 const AUTOSAVE_MS = 12000;
 const screens = ['start', 'intro', 'world', 'dialogue', 'mission', 'reward'];
 let screen = 'start';
@@ -31,10 +25,20 @@ const defaultState = () => ({
   tomas: false,
   reward: false,
   memories: [],
+  inventory: [],
+  explored: [],
+  chapter: 1,
+  mission2: false,
+  mission2Done: false,
+  mission3: false,
+  mission3Done: false,
   worldTime: 8 * 60,
-  player: { x: 480, y: 365 },
-  explored: []
+  player: { x: 480, y: 365 }
 });
+
+function safeNumber(value, fallback) {
+  return Number.isFinite(Number(value)) ? Number(value) : fallback;
+}
 
 function loadState() {
   try {
@@ -45,8 +49,13 @@ function loadState() {
       ...base,
       ...raw,
       version: SAVE_VERSION,
-      player: { ...base.player, ...(raw.player || {}) },
+      worldTime: Math.max(0, safeNumber(raw.worldTime, base.worldTime)),
+      player: {
+        x: safeNumber(raw.player?.x, base.player.x),
+        y: safeNumber(raw.player?.y, base.player.y)
+      },
       memories: Array.isArray(raw.memories) ? raw.memories : [],
+      inventory: Array.isArray(raw.inventory) ? raw.inventory : [],
       explored: Array.isArray(raw.explored) ? raw.explored : []
     };
   } catch (_) {
@@ -66,14 +75,12 @@ const npcs = [
   { id: 'tomas', name: 'Tomás', x: 1120, y: 410, color: '#6688a0' }
 ];
 
+/* Base collision only protects the world boundary. rpg-v2 owns the real map solids. */
 const obstacles = [
-  { x: 0, y: 0, w: 3600, h: 80 }, { x: 0, y: 2320, w: 3600, h: 80 },
-  { x: 0, y: 0, w: 80, h: 2400 }, { x: 3520, y: 0, w: 80, h: 2400 },
-  { x: 350, y: 210, w: 250, h: 130 }, { x: 980, y: 230, w: 270, h: 150 },
-  { x: 1450, y: 700, w: 300, h: 160 }, { x: 1750, y: 250, w: 250, h: 120 },
-  { x: 600, y: 780, w: 180, h: 240 }, { x: 1280, y: 980, w: 260, h: 130 },
-  { x: 2250, y: 900, w: 360, h: 180 }, { x: 2850, y: 430, w: 300, h: 150 },
-  { x: 3050, y: 1500, w: 260, h: 220 }, { x: 1950, y: 1800, w: 420, h: 170 }
+  { x: 0, y: 0, w: world.w, h: 80 },
+  { x: 0, y: world.h - 80, w: world.w, h: 80 },
+  { x: 0, y: 0, w: 80, h: world.h },
+  { x: world.w - 80, y: 0, w: 80, h: world.h }
 ];
 
 const canvas = $('game');
@@ -92,7 +99,7 @@ function resizeCanvas() {
   canvas.height = Math.floor(h * dpr);
   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   ctx.imageSmoothingEnabled = false;
-  if (screen === 'world') draw();
+  if (screen === 'world' && typeof draw === 'function') draw();
 }
 
 function save() {
@@ -101,9 +108,7 @@ function save() {
   try {
     localStorage.setItem(SAVE_KEY, JSON.stringify(state));
     lastSaveAt = performance.now();
-  } catch (_) {
-    // El juego continúa aunque el almacenamiento del navegador esté bloqueado.
-  }
+  } catch (_) {}
 }
 
 function maybeAutosave(now) {
@@ -188,48 +193,17 @@ function addMemory(id) {
   if (!state.memories.includes(id)) state.memories.push(id);
 }
 
-function interact() {
-  if (screen !== 'world' || paused) return;
-  const n = nearNPC();
-  if (!n) return;
-
-  if (n.id === 'mateo' && !state.mission) {
-    say([
-      { speaker: 'Don Mateo', text: 'Llegaste justo cuando estaba buscando un recuerdo que guardé hace muchos años.' },
-      { speaker: 'Don Mateo', text: 'No necesito que lo encuentres todo. Necesito que aprendas a mirar el pueblo.' },
-      { speaker: 'Don Mateo', text: 'Hablá con Rosa y con Tomás. Ellos pueden darte las dos partes que faltan.' }
-    ], 'mission');
-  } else if (n.id === 'rosa' && state.mission && !state.rosa) {
-    state.rosa = true; addMemory('rosa-pista'); save(); updateMission();
-    say([
-      { speaker: 'Rosa', text: 'Hay historias que se conservan en los caminos y en el trabajo cotidiano.' },
-      { speaker: 'Rosa', text: 'Mi pista es sencilla: preguntate qué cosas hacen que un lugar sea reconocible para quienes lo habitan.' }
-    ]);
-  } else if (n.id === 'tomas' && state.mission && !state.tomas) {
-    state.tomas = true; addMemory('tomas-pista'); save(); updateMission();
-    say([
-      { speaker: 'Tomás', text: 'Para mí, el territorio también se entiende por sus cambios: lo que hubo, lo que hay y lo que las personas construyeron.' },
-      { speaker: 'Tomás', text: 'Llevá esas dos ideas a Don Mateo.' }
-    ]);
-  } else if (n.id === 'mateo' && state.mission && state.rosa && state.tomas && !state.reward) {
-    state.reward = true; addMemory('primer-recuerdo'); save();
-    $('objective').textContent = 'Misión completada';
-    show('reward');
-  } else if (n.id === 'rosa' || n.id === 'tomas') {
-    say([{ speaker: n.name, text: 'Ya te di mi pista. Seguí recorriendo Villa Pelón.' }]);
-  }
-}
-
 function updateMission() {
-  if (!state.mission) {
-    $('objective').textContent = 'Objetivo: conocé a Don Mateo';
-  } else {
-    $('objective').textContent = state.rosa && state.tomas
-      ? 'Objetivo: volvé con Don Mateo'
-      : 'Objetivo: encontrá las dos pistas';
+  const objective = $('objective');
+  if (objective) {
+    objective.textContent = !state.mission
+      ? 'Objetivo: conocé a Don Mateo'
+      : state.rosa && state.tomas
+        ? 'Objetivo: volvé con Don Mateo'
+        : 'Objetivo: encontrá las dos pistas';
   }
-  $('rosaStep').textContent = (state.rosa ? '✓ ' : '○ ') + 'Rosa';
-  $('tomasStep').textContent = (state.tomas ? '✓ ' : '○ ') + 'Tomás';
+  if ($('rosaStep')) $('rosaStep').textContent = (state.rosa ? '✓ ' : '○ ') + 'Rosa';
+  if ($('tomasStep')) $('tomasStep').textContent = (state.tomas ? '✓ ' : '○ ') + 'Tomás';
 }
 
 function acceptMission() {
@@ -262,52 +236,10 @@ function move(dt) {
 }
 
 function draw() {
-  const viewW = viewport.w;
-  const viewH = viewport.h;
-  camera.x = Math.max(0, Math.min(world.w - viewW, player.x - viewW / 2));
-  camera.y = Math.max(0, Math.min(world.h - viewH, player.y - viewH / 2));
-
   ctx.setTransform(viewport.dpr, 0, 0, viewport.dpr, 0, 0);
-  ctx.clearRect(0, 0, viewW, viewH);
+  ctx.clearRect(0, 0, viewport.w, viewport.h);
   ctx.fillStyle = '#71875b';
-  ctx.fillRect(0, 0, viewW, viewH);
-  ctx.save();
-  ctx.translate(-camera.x, -camera.y);
-
-  ctx.fillStyle = '#b7a36f'; ctx.fillRect(90, 610, 3420, 170);
-  ctx.fillStyle = '#6687a0'; ctx.fillRect(3050, 80, 420, 2240);
-  ctx.fillStyle = '#8b7658';
-  for (let i = 0; i < 72; i++) {
-    const x = 130 + (i * 97) % 3260;
-    const y = 120 + (i * 173) % 2140;
-    ctx.fillRect(x, y, 18, 8); ctx.fillRect(x + 5, y - 14, 8, 22);
-  }
-
-  ctx.strokeStyle = '#8f7b53'; ctx.lineWidth = 3;
-  for (let x = 130; x < 3000; x += 360) {
-    ctx.strokeRect(x, 840, 290, 360);
-    ctx.strokeRect(x, 1280, 290, 360);
-  }
-
-  for (const o of obstacles) {
-    ctx.fillStyle = '#4b4032'; ctx.fillRect(o.x, o.y, o.w, o.h);
-    ctx.fillStyle = '#655641'; ctx.fillRect(o.x + 8, o.y + 8, Math.max(0, o.w - 16), 18);
-  }
-
-  for (const n of npcs) {
-    ctx.fillStyle = '#1b1813'; ctx.fillRect(n.x - 15, n.y - 12, 30, 36);
-    ctx.fillStyle = n.color; ctx.fillRect(n.x - 12, n.y - 28, 24, 22);
-    ctx.fillStyle = '#f5ecd8'; ctx.font = 'bold 14px system-ui'; ctx.textAlign = 'center';
-    ctx.fillText(n.name, n.x, n.y - 38);
-  }
-
-  ctx.fillStyle = '#e6d2a4';
-  ctx.beginPath(); ctx.arc(player.x, player.y, player.r, 0, Math.PI * 2); ctx.fill();
-  ctx.fillStyle = '#30271b'; ctx.fillRect(player.x - 7, player.y - 22, 14, 9);
-  ctx.restore();
-
-  const n = nearNPC();
-  $('prompt').classList.toggle('hidden', !n);
+  ctx.fillRect(0, 0, viewport.w, viewport.h);
 }
 
 function loop(t) {
@@ -316,7 +248,8 @@ function loop(t) {
   const dt = Math.min(0.035, (t - last) / 1000 || 0);
   last = t;
   move(dt);
-  state.worldTime = (state.worldTime + dt * 2) % 1440;
+  /* worldTime is intentionally unbounded: day/night, weather and seasons need elapsed days. */
+  state.worldTime = Math.max(0, state.worldTime + dt * 2);
   draw();
   maybeAutosave(t);
   rafId = requestAnimationFrame(loop);
@@ -336,14 +269,12 @@ function togglePause(force) {
   }
 }
 
-function setKey(key, value) {
-  keys[key] = value;
-}
+function setKey(key, value) { keys[key] = value; }
 
 addEventListener('keydown', e => {
   setKey(e.key, true);
   if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].includes(e.key)) e.preventDefault();
-  if ((e.key === 'e' || e.key === 'E') && !e.repeat) interact();
+  if ((e.key === 'e' || e.key === 'E') && !e.repeat) window.interact?.();
   if (e.key === 'Escape' && !e.repeat) togglePause();
 });
 addEventListener('keyup', e => setKey(e.key, false));
@@ -353,7 +284,6 @@ addEventListener('blur', () => {
 });
 addEventListener('resize', resizeCanvas, { passive: true });
 addEventListener('orientationchange', () => setTimeout(resizeCanvas, 80), { passive: true });
-
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) {
     keys = Object.create(null);
@@ -381,7 +311,10 @@ $('closeReward').onclick = () => { show('world'); updateMission(); save(); };
 $('pauseBtn').onclick = () => togglePause();
 $('resume').onclick = () => togglePause(false);
 $('restart').onclick = () => {
-  localStorage.removeItem(SAVE_KEY);
+  try {
+    localStorage.removeItem(SAVE_KEY);
+    localStorage.removeItem('lunaOnboardingV1');
+  } catch (_) {}
   location.reload();
 };
 
