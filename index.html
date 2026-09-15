@@ -10,81 +10,15 @@
 </head>
 <body>
 <main id="app">
-<section id="start" class="screen active">
-  <div class="start-card">
-    <p class="eyebrow">UNA AVENTURA WEB</p>
-    <h1>Luna<br><span>en Villa Pelón</span></h1>
-    <p class="lead">Historias, personas y territorio se descubren caminando.</p>
-    <button id="startBtn" class="primary">Comenzar</button>
-    <small>Se juega desde el navegador. El progreso se guarda automáticamente.</small>
-  </div>
-</section>
-
-<section id="intro" class="screen">
-  <div class="intro-card">
-    <div class="mark">✦</div>
-    <p class="eyebrow">VILLA PELÓN</p>
-    <h2>Acompañá a Luna, una nueva habitante de Villa Pelón, a descubrir su historia.</h2>
-    <p>Llegó con pocas cosas y muchas preguntas. Antes de conocer el pueblo, tendrá que aprender a mirar: escuchar a sus habitantes, recorrer sus caminos y encontrar las pequeñas historias que todavía permanecen.</p>
-    <button id="enterBtn" class="primary">Entrar al pueblo</button>
-  </div>
-</section>
-
-<section id="world" class="screen world">
-  <div class="hud">
-    <div><b>VILLA PELÓN</b><span id="objective">Objetivo: conocé a Don Mateo</span></div>
-    <button id="pauseBtn" class="round" aria-label="Pausar juego">Ⅱ</button>
-  </div>
-  <canvas id="game" width="960" height="540" aria-label="Mundo de Villa Pelón"></canvas>
-  <div id="prompt" class="prompt hidden">E — Hablar</div>
-  <button id="interactBtn" class="interact hidden" aria-label="Hablar con el personaje cercano">Hablar</button>
-  <div class="touch" aria-label="Controles de movimiento">
-    <button data-key="ArrowUp" aria-label="Arriba">▲</button>
-    <div>
-      <button data-key="ArrowLeft" aria-label="Izquierda">◀</button>
-      <button data-key="ArrowDown" aria-label="Abajo">▼</button>
-      <button data-key="ArrowRight" aria-label="Derecha">▶</button>
-    </div>
-  </div>
-</section>
-
-<section id="dialogue" class="screen overlay">
-  <div class="box">
-    <div id="speaker" class="speaker">Don Mateo</div>
-    <p id="dialogueText"></p>
-    <button id="nextDialogue" class="primary">Continuar</button>
-  </div>
-</section>
-
-<section id="mission" class="screen overlay">
-  <div class="box">
-    <p class="eyebrow">PRIMERA MISIÓN</p>
-    <h2>El recuerdo que falta</h2>
-    <p>Don Mateo conserva un recuerdo del pueblo, pero le falta una parte. Visitá a Rosa y a Tomás para encontrar dos pistas.</p>
-    <div class="steps"><span id="rosaStep">○ Rosa</span><span id="tomasStep">○ Tomás</span></div>
-    <button id="acceptMission" class="primary">Aceptar misión</button>
-  </div>
-</section>
-
-<section id="reward" class="screen overlay">
-  <div class="box">
-    <div class="mark">✦</div>
-    <p class="eyebrow">RECUERDO DESBLOQUEADO</p>
-    <h2>La memoria también vive en las personas.</h2>
-    <p>Aprendiste que un territorio no es solamente un lugar: también está hecho de trabajo, caminos, relatos y personas que lo habitan.</p>
-    <button id="closeReward" class="primary">Guardar y continuar</button>
-  </div>
-</section>
-
-<div id="pause" class="pause hidden">
-  <div class="box">
-    <p class="eyebrow">PAUSA</p>
-    <h2>Luna en Villa Pelón</h2>
-    <button id="resume" class="primary">Volver al juego</button>
-    <button id="restart" class="secondary">Reiniciar partida</button>
-  </div>
-</div>
+<section id="start" class="screen active"><div class="start-card"><p class="eyebrow">UNA AVENTURA WEB</p><h1>Luna<br><span>en Villa Pelón</span></h1><p class="lead">Historias, personas y territorio se descubren caminando.</p><button id="startBtn" class="primary">Comenzar</button><small>Se juega desde el navegador. El progreso se guarda automáticamente.</small></div></section>
+<section id="intro" class="screen"><div class="intro-card"><div class="mark">✦</div><p class="eyebrow">VILLA PELÓN</p><h2>Acompañá a Luna, una nueva habitante de Villa Pelón, a descubrir su historia.</h2><p>Llegó con pocas cosas y muchas preguntas. Antes de conocer el pueblo, tendrá que aprender a mirar: escuchar a sus habitantes, recorrer sus caminos y encontrar las pequeñas historias que todavía permanecen.</p><button id="enterBtn" class="primary">Entrar al pueblo</button></div></section>
+<section id="world" class="screen world"><div class="hud"><div><b>VILLA PELÓN</b><span id="objective">Objetivo: conocé a Don Mateo</span></div><button id="pauseBtn" class="round" aria-label="Pausar juego">Ⅱ</button></div><canvas id="game" width="960" height="540" aria-label="Mundo de Villa Pelón"></canvas><div id="prompt" class="prompt hidden">E — Hablar</div><button id="interactBtn" class="interact" aria-label="Intentar hablar">Hablar</button><div class="touch" aria-label="Controles de movimiento"><button data-key="ArrowUp" aria-label="Arriba">▲</button><div><button data-key="ArrowLeft" aria-label="Izquierda">◀</button><button data-key="ArrowDown" aria-label="Abajo">▼</button><button data-key="ArrowRight" aria-label="Derecha">▶</button></div></div></section>
+<section id="dialogue" class="screen overlay"><div class="box"><div id="speaker" class="speaker">Don Mateo</div><p id="dialogueText"></p><button id="nextDialogue" class="primary">Continuar</button></div></section>
+<section id="mission" class="screen overlay"><div class="box"><p class="eyebrow">PRIMERA MISIÓN</p><h2>El recuerdo que falta</h2><p>Don Mateo conserva un recuerdo del pueblo, pero le falta una parte. Visitá a Rosa y a Tomás para encontrar dos pistas.</p><div class="steps"><span id="rosaStep">○ Rosa</span><span id="tomasStep">○ Tomás</span></div><button id="acceptMission" class="primary">Aceptar misión</button></div></section>
+<section id="reward" class="screen overlay"><div class="box"><div class="mark">✦</div><p class="eyebrow">RECUERDO DESBLOQUEADO</p><h2>La memoria también vive en las personas.</h2><p>Aprendiste que un territorio no es solamente un lugar: también está hecho de trabajo, caminos, relatos y personas que lo habitan.</p><button id="closeReward" class="primary">Guardar y continuar</button></div></section>
+<div id="pause" class="pause hidden"><div class="box"><p class="eyebrow">PAUSA</p><h2>Luna en Villa Pelón</h2><button id="resume" class="primary">Volver al juego</button><button id="restart" class="secondary">Reiniciar partida</button></div></div>
 </main>
 <script src="app.js"></script>
+<script>document.getElementById('interactBtn').addEventListener('click',function(){if(typeof interact==='function')interact();});</script>
 </body>
 </html>
