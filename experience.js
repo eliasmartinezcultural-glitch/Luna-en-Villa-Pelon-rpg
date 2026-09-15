@@ -1,4 +1,4 @@
-/* LUNA EN VILLA PELÓN — EXPERIENCIA V1 */
+/* LUNA EN VILLA PELÓN — EXPERIENCIA V1.1 */
 (function(){
   const ONBOARD='lunaOnboardingV1';
   const $=id=>document.getElementById(id);
@@ -27,19 +27,25 @@
   const start=$('startBtn');
   if(start) start.textContent=hasSave()?'Continuar aventura':'Comenzar aventura';
 
+  // app.js asigna enterBtn.onclick antes de cargar este archivo. Guardamos la
+  // función original y reemplazamos también el handler del botón para que el
+  // onboarding no dependa de cómo el navegador expone funciones globales.
   window.__baseEnter=window.enter;
   window.enter=function(){
-    const first=!localStorage.getItem(ONBOARD) && !hasSave();
+    let first=false;
+    try{first=!localStorage.getItem(ONBOARD) && !hasSave();}catch(e){first=!hasSave()}
     if(first){$('guide').classList.add('active');return;}
     window.__baseEnter();
   };
+  const enterBtn=$('enterBtn');
+  if(enterBtn) enterBtn.onclick=window.enter;
 
   const intro=$('intro');
   if(intro && hasSave()){
     const h=intro.querySelector('h2'), p=intro.querySelector('p:not(.eyebrow)');
     if(h) h.textContent='Tu aventura está guardada.';
     if(p) p.textContent='Podés volver a Villa Pelón exactamente donde la dejaste. Tu misión, tus pistas y tus recuerdos se conservan automáticamente.';
-    if($('enterBtn')) $('enterBtn').textContent='Continuar partida';
+    if(enterBtn) enterBtn.textContent='Continuar partida';
   }
 
   const world=$('world');
@@ -72,11 +78,12 @@
       else target=npcs.find(n=>n.id==='mateo');
       if(!target) return;
       const sx=target.x-camera.x, sy=target.y-camera.y;
-      if(sx<-40||sx>viewport.w+40||sy<-60||sy>viewport.h+60) return;
       const pulse=8+Math.sin(performance.now()/180)*3;
       ctx.save();
-      ctx.strokeStyle='#f4d58d';ctx.lineWidth=3;ctx.beginPath();ctx.arc(sx,sy-48,18+pulse/3,0,Math.PI*2);ctx.stroke();
-      ctx.fillStyle='#f4d58d';ctx.beginPath();ctx.moveTo(sx,sy-24);ctx.lineTo(sx-9,sy-39);ctx.lineTo(sx+9,sy-39);ctx.closePath();ctx.fill();
+      if(sx>=-40&&sx<=viewport.w+40&&sy>=-60&&sy<=viewport.h+60){
+        ctx.strokeStyle='#f4d58d';ctx.lineWidth=3;ctx.beginPath();ctx.arc(sx,sy-48,18+pulse/3,0,Math.PI*2);ctx.stroke();
+        ctx.fillStyle='#f4d58d';ctx.beginPath();ctx.moveTo(sx,sy-24);ctx.lineTo(sx-9,sy-39);ctx.lineTo(sx+9,sy-39);ctx.closePath();ctx.fill();
+      }
       ctx.restore();
     };
   }
