@@ -229,8 +229,9 @@ function move(dt) {
   dy = dy / len * player.speed * dt;
   const nx = player.x + dx;
   const ny = player.y + dy;
-  if (!obstacles.some(o => rectHit(nx, player.y, player.r, o))) player.x = nx;
-  if (!obstacles.some(o => rectHit(player.x, ny, player.r, o))) player.y = ny;
+  const blocked = typeof window.worldBlocked === 'function' ? window.worldBlocked : (x, y, r) => obstacles.some(o => rectHit(x, y, r, o));
+  if (!blocked(nx, player.y, player.r)) player.x = nx;
+  if (!blocked(player.x, ny, player.r)) player.y = ny;
   player.x = Math.max(95, Math.min(world.w - 95, player.x));
   player.y = Math.max(95, Math.min(world.h - 95, player.y));
 }
