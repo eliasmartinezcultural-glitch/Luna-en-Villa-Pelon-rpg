@@ -1,898 +1,335 @@
 # LUNA EN VILLA PELÓN — CONSTITUCIÓN MUNDIAL
 
-**ESTADO: CONGELADA — LEY MAESTRA DEL PROYECTO**
+**ESTADO: CONGELADA — LEY MAESTRA ÚNICA DEL PROYECTO**  
+**CANON MUNDIAL ACTIVO: 3.0**
 
-Esta Constitución gobierna diseño, programación, contenido, mapa, expansión, interfaz, rendimiento y futuras decisiones de **Luna en Villa Pelón**.
+Este archivo es la **única fuente normativa** del mundo, la experiencia y las decisiones estructurales de Luna en Villa Pelón. No se crean constituciones paralelas, biblias de zonas, reglas visuales duplicadas ni sistemas de leyes superpuestos.
 
-Una propuesta nueva solo puede entrar al proyecto si respeta estas leyes. Si una propuesta contradice una ley, la ley prevalece.
+Una propuesta nueva entra solamente si respeta esta ley. Si contradice una regla, la regla prevalece.
 
 ---
 
 ## 1. NORTE ABSOLUTO
 
-**Luna en Villa Pelón es un RPG familiar de exploración, vida, paseo, descubrimiento, misiones y aprendizaje.**
+**Luna en Villa Pelón es un RPG familiar, educativo y de exploración de vida cotidiana, en pixel art, protagonizado por Luna.**
 
-Frase guía:
+**CAMINAR → OBSERVAR → HABLAR → HACER → DESCUBRIR → APRENDER → RECORDAR → CONTINUAR.**
 
-> **Caminar para descubrir. Vivir para conocer. Jugar para aprender Villa Pelón.**
+El jugador debe sentir que vive un lugar, no que navega un conjunto de sistemas.
 
-El objetivo no es construir el juego más complejo. El objetivo es construir un mundo al que el jugador quiera entrar, recorrer, conocer y volver.
+## 2. LEY MULTIPLATAFORMA — DESDE EL PRIMER DÍA
 
----
+El juego se distribuye principalmente mediante **un enlace compartido por WhatsApp, redes sociales y navegador**.
 
-## 2. LEY SUPREMA: JUGABILIDAD PRIMERO
-
-Orden obligatorio de prioridades:
-
-1. Que funcione.
-2. Que sea fácil de jugar.
-3. Que sea fluido.
-4. Que sea divertido de recorrer.
-5. Que sea claro.
-6. Que enseñe algo.
-7. Estética y complejidad.
-
-**Nunca sacrificar jugabilidad por decoración o complejidad.**
-
-Si una función agrega complejidad sin mejorar claramente la experiencia, no entra.
-
----
-
-## 3. LEY MULTIDISPOSITIVO
-
-El mismo juego debe funcionar desde el comienzo en:
-
-- teléfonos;
-- tablets;
-- notebooks;
+- teléfono como dispositivo principal de prueba;
+- tablet;
+- notebook;
 - PC;
 - pantallas pequeñas y grandes;
-- teclado;
-- mouse;
-- controles táctiles.
+- teclado y mouse;
+- controles táctiles;
+- conexión y carga razonables;
+- navegador moderno sin instalación.
 
-El teléfono no es una adaptación secundaria.
+Reglas inviolables:
+1. No depender de hover.
+2. No exigir teclado para acciones fundamentales.
+3. No usar texto ilegible en móvil.
+4. Los controles táctiles deben ser grandes y claros.
+5. La pantalla debe adaptarse sin romper el juego.
+6. El juego debe poder abrirse directamente desde el enlace.
+7. Ninguna función esencial puede existir solamente en PC.
+8. Rendimiento y peso de recursos son parte del diseño.
 
-Reglas obligatorias:
+**Si funciona en PC pero no funciona bien en teléfono, no está terminado.**
 
-- botones táctiles grandes;
-- textos legibles;
-- controles simples;
-- ninguna acción crítica dependiente exclusivamente de hover;
-- ninguna función importante exclusiva del teclado;
-- interfaz adaptable al tamaño de pantalla.
+## 3. LEY DE SIMPLICIDAD
 
-**Compatibilidad antes que espectacularidad.**
+Existe **un solo mundo, un solo núcleo de juego y una sola fuente normativa**.
 
----
-
-## 4. LEY DE SIMPLICIDAD
-
-El proyecto tendrá la menor cantidad de sistemas necesarios.
-
-Antes de crear una capa nueva se pregunta:
+Antes de crear una nueva capa técnica, sistema, archivo de estado o motor paralelo:
 
 > **¿Podemos resolverlo con lo que ya existe?**
 
-Si la respuesta es sí, se reutiliza.
-
-No crear sistemas duplicados, motores paralelos, estados redundantes ni soluciones temporales que se vuelvan permanentes.
-
-La arquitectura debe poder entenderse y mantenerse con facilidad.
-
----
-
-## 5. LEY DE UNA SOLA VERDAD
-
-Cada dato importante debe tener una única fuente de verdad.
-
-Ejemplos:
-
-- posición del jugador;
-- progreso;
-- misión;
-- reloj del mundo;
-- recuerdos;
-- configuración;
-- guardado.
-
-Evitar duplicar el mismo estado en diferentes sistemas.
-
----
-
-## 6. LEY DEL CICLO DE JUEGO
-
-El núcleo debe poder reducirse a:
-
-**ENTRAR → CAMINAR → OBSERVAR → ENCONTRAR → INTERACTUAR → DESCUBRIR → CUMPLIR → RECOMPENSA → CONTINUAR**
-
-Todo sistema debe tener entrada, acción, resultado y salida.
-
-**Todo estado debe tener una salida.**
-
----
-
-## 7. LEY DEL JUGADOR
-
-El núcleo inicial se limita a:
-
-- moverse;
-- observar;
-- hablar;
-- explorar;
-- cumplir misiones;
-- recordar descubrimientos;
-- aprender.
-
-No agregar nuevas acciones fundamentales hasta que estas funcionen de manera sólida.
-
----
-
-## 8. LEY DEL MUNDO VIVO
-
-Villa Pelón debe sentirse habitado aunque Luna no esté realizando una misión.
-
-La sensación de vida se construirá primero con pocos sistemas bien utilizados:
-
-- personajes;
-- movimiento;
-- horarios simples;
-- pequeñas actividades;
-- lugares reconocibles;
-- cambios de ambiente;
-- acontecimientos;
-- descubrimientos.
-
-**Primero sensación de vida; después simulación profunda.**
-
----
-
-## 9. LEY DEL MAPA
-
-El mapa es territorio jugable, no una imagen gigante.
-
-Cada zona debe tener al menos una razón jugable para existir:
-
-- explorar;
-- aprender;
-- conocer un personaje;
-- cumplir una misión;
-- descubrir algo;
-- encontrar una memoria;
-- representar una dimensión de la vida de Villa Pelón;
-- conectar otras zonas de forma significativa.
-
-**No se amplía el mapa solamente para hacerlo más grande.**
-
----
-
-## 10. LEY DE ESCALA
-
-La referencia de la semilla ampliada es **3600 × 2400**.
-
-Esta dimensión es un marco, no una obligación permanente.
-
-Regla:
-
-> **Primero densidad de experiencia. Después superficie.**
-
-Un mundo pequeño y vivo vale más que un mundo enorme y vacío.
-
----
-
-## 11. LEY DE ZONAS
-
-La construcción territorial se organizará conceptualmente en zonas, por ejemplo:
-
-1. Pueblo.
-2. Chacras.
-3. Producción.
-4. Río.
-5. Bardas y exterior.
-6. Picada 21 como zona distante.
-
-Estas zonas son conceptos de diseño, no obligación de implementarlas todas de inmediato.
-
-Cada zona deberá tener identidad, recorrido y propósito.
-
----
-
-## 12. LEY DE CONSTRUCCIÓN DEL MAPA
-
-Orden obligatorio:
-
-**TERRENO → CAMINOS → LUGARES → PERSONAJES → INTERACCIONES → MISIONES → DESCUBRIMIENTOS → DECORACIÓN**
-
-No llenar el mapa de decoración antes de saber qué se puede hacer en él.
-
----
-
-## 13. LEY DE CAMINOS
-
-Los caminos orientan e invitan a explorar, pero no deben eliminar la libertad del jugador.
-
-> **Camino para orientar. Libertad para explorar.**
-
----
-
-## 14. LEY DE PUNTOS DE INTERÉS
-
-No necesitamos cientos de lugares.
-
-Necesitamos lugares memorables que hagan que el jugador quiera volver.
-
-Cada zona debe priorizar pocos puntos de interés reconocibles antes que una gran cantidad de elementos genéricos.
-
----
-
-## 15. LEY DE MISIONES
-
-Las misiones deben hacer que el jugador camine, observe, converse, descubra y actúe.
-
-Estructura ideal:
-
-**PROBLEMA → RECORRIDO → PERSONAS → PISTAS → DESCUBRIMIENTO → REGRESO → RECOMPENSA**
-
-Las misiones no deben convertirse en lecturas largas.
-
----
-
-## 16. LEY EDUCATIVA
-
-**La educación acompaña al juego; no reemplaza al juego.**
-
-El proyecto nunca debe convertirse en:
-
-- una clase disfrazada;
-- un museo estático;
-- una enciclopedia interactiva;
-- una sucesión de textos largos;
-- un simulador económico agresivo;
-- un juego de combate como eje;
-- terror o contenido adulto;
-- una experiencia centrada en violencia, accidentes o conflicto real.
-
-El aprendizaje debe aparecer jugando, explorando, conversando, observando, resolviendo y descubriendo.
-
----
-
-## 17. LEY HISTÓRICA
-
-Los hechos históricos reales deben investigarse y verificarse antes de presentarse como verdaderos.
-
-Se permite crear libremente personajes, diálogos, situaciones, objetos y misiones ficticias.
-
-**Nunca presentar una invención como hecho histórico documentado.**
-
-Categorías de contenido:
-
-- **REAL VERIFICADO:** puede presentarse como conocimiento.
-- **FICCIÓN:** pertenece al universo ficticio.
-- **INSPIRADO EN LA REALIDAD:** utiliza elementos reales sin afirmar que el hecho ocurrió exactamente así.
-
----
-
-## 18. LEY DE IDENTIDAD TERRITORIAL
-
-Dentro del juego se utiliza **Villa Pelón** como nombre territorial ficticio.
-
-No mostrar nombres reales de calles, barrios, instituciones o localidades como parte del territorio del juego.
-
-La inspiración territorial real puede existir detrás del diseño, pero el universo jugable conserva su identidad ficticia.
-
----
-
-## 19. LEY FAMILIAR
-
-El juego debe ser apto para jugar en familia y atractivo para distintas edades.
-
-Debe priorizar:
-
-- curiosidad;
-- paseo;
-- cooperación;
-- identidad territorial;
-- naturaleza;
-- cultura;
-- trabajo;
-- memoria;
-- descubrimiento;
-- vida cotidiana.
-
----
-
-## 20. LEY DE PERSONAJES
-
-No necesitamos cientos de NPC.
-
-Cada personaje importante debe tener:
-
-- identidad;
-- lugar;
-- función o rutina;
-- algo que contar;
-- algo que hacer;
-- relación con el mundo.
-
-**Un buen personaje vale más que veinte personajes decorativos.**
-
----
-
-## 21. LEY DE MEMORIA Y PROGRESO
-
-El jugador debe sentir que sus acciones dejan huella.
-
-El sistema inicial debe registrar solamente lo necesario:
-
-- misiones;
-- recuerdos;
-- lugares importantes;
-- personajes conocidos;
-- progreso principal.
-
-La memoria debe servir a la experiencia, no convertirse en burocracia.
-
----
-
-## 22. LEY DEL TIEMPO Y DEL MUNDO DINÁMICO
-
-El futuro podrá incorporar día/noche, horarios, estaciones, clima, rutinas y acontecimientos.
-
-Pero cada sistema temporal debe modificar realmente lo que el jugador experimenta.
-
-**Si un sistema no cambia la experiencia, todavía no necesita existir.**
-
----
-
-## 23. LEY DE RENDIMIENTO
-
-Prioridad:
-
-**FLUIDEZ > CANTIDAD DE OBJETOS > EFECTOS VISUALES**
-
-Evitar procesos innecesarios, imágenes excesivamente pesadas, partículas gratuitas, animaciones sin propósito y simulaciones costosas que no aporten jugabilidad.
-
-Cada elemento visual debe justificar su costo.
-
----
-
-## 24. LEY DE INTERFAZ
-
-La interfaz debe desaparecer cuando el jugador está jugando.
-
-El protagonista visual debe ser el mundo.
-
-Menos botones, menos ventanas, menos indicadores permanentes.
-
-> **Menos interfaz. Más mundo.**
-
----
-
-## 25. LEY DE GUARDADO
-
-El guardado debe ser:
-
-- simple;
-- resistente a errores;
-- compatible con futuras versiones;
-- transparente para el jugador.
-
-Un fallo menor no debe destruir una partida.
-
----
-
-## 26. LEY DE RECUPERACIÓN
-
-Todo sistema debe contemplar errores y recuperación.
-
-Un diálogo no puede dejar congelado el juego.
-
-Una misión debe poder continuar o recuperarse.
-
-Una interacción debe tener salida.
-
-El jugador nunca debe quedar atrapado permanentemente en un estado.
-
----
-
-## 27. LEY DE ESTADOS
-
-Los estados principales deben mantenerse pocos y claros:
-
-**INICIO → INTRODUCCIÓN → MUNDO → INTERACCIÓN/MISIÓN → RECOMPENSA → MUNDO**
-
-Abrir un diálogo no significa destruir el mundo.
-
-Pausar significa pausar y reanudar correctamente.
-
----
-
-## 28. LEY DE EXPANSIÓN
-
-Una ampliación solamente se aprueba si responde:
-
-> **¿Qué gana el jugador?**
-
-Si la respuesta es solamente "un mapa más grande", no se amplía.
-
-Si aporta exploración, vida, descubrimiento, misión o aprendizaje, puede incorporarse.
-
----
-
-## 29. LEY DE CAPAS
-
-El crecimiento del proyecto seguirá este orden:
-
-### CAPA 1 — JUGABILIDAD
-Movimiento, cámara, interacción, estados y guardado.
-
-### CAPA 2 — MUNDO
-Mapa, zonas, caminos y lugares.
-
-### CAPA 3 — VIDA
-NPC, horarios y actividades simples.
-
-### CAPA 4 — CONTENIDO
-Misiones, recuerdos y descubrimientos.
-
-### CAPA 5 — AMBIENTE
-Sonido, música, clima, estaciones y detalles.
-
-### CAPA 6 — PROFUNDIDAD
-Sistemas adicionales únicamente si mejoran realmente el juego.
-
-**No saltar a capas superiores para ocultar problemas de las inferiores.**
-
----
-
-## 30. LEY CONTRA LA SOBREINGENIERÍA
-
-Antes de crear una arquitectura nueva:
-
-> **¿Puede resolverse dentro del sistema existente sin volverlo frágil?**
-
 Si sí, se reutiliza.
 
-Si no, se modifica.
+No se crearán motores paralelos, estados duplicados, sistemas de misiones duplicados, fuentes de verdad duplicadas, mapas alternativos que representen el mismo territorio, reglas contradictorias ni soluciones temporales que se vuelvan permanentes.
 
-Solo si modificarlo genera más fragilidad se crea una estructura nueva.
+## 4. LEY SUPREMA DE JUGABILIDAD
 
-**No diseñar complejidad por anticipación.**
+**FUNCIONAR → SER JUGABLE → SER FLUIDO → SER CLARO → SER EXPLORABLE → ENSEÑAR → DECORAR.**
 
----
+## 5. LEY DEL UNIVERSO
 
-## 31. LEY DE AUDITORÍA
+El único mundo nombrado dentro del juego es **VILLA PELÓN**.
 
-Antes de una expansión importante:
+La localidad real utilizada como referencia de investigación **no aparece dentro del juego**, en ninguna forma visible al jugador.
 
-**AUDITAR → REPARAR → PROBAR → CONSOLIDAR → EXPANDIR**
+**REALIDAD INVESTIGADA → VERIFICACIÓN → TRANSFORMACIÓN → VILLA PELÓN.**
 
-Nunca:
+## 6. LEY DE DATOS Y AUTENTICIDAD
 
-**AGREGAR → AGREGAR → AGREGAR → REPARAR TODO AL FINAL**
+Los datos reales deben investigarse, contrastarse, clasificarse, adaptarse, implementarse y probarse.
 
----
+Clasificación interna: **REAL VERIFICADO / INSPIRADO EN LA REALIDAD / FICCIÓN DE VILLA PELÓN**.
 
-## 32. LEY DE PRUEBA MULTIDISPOSITIVO
+Nunca presentar una invención como hecho histórico verdadero.
 
-Cada gran cambio debe comprobar como mínimo:
+## 7. LEY DE GRAMÁTICA TERRITORIAL
 
-### PC
-- teclado;
-- mouse;
-- navegador;
-- pantalla grande.
+**Villa Pelón no es un único paisaje.**
 
-### MÓVIL
-- táctil;
-- botones;
-- lectura;
-- movimiento;
-- pantalla pequeña.
+Las cuatro identidades principales son: **ENTRAMADO URBANO / SECTOR RURAL / BARDAS / PICADA 21**.
 
-### JUEGO
-- inicio;
-- introducción;
-- entrada al mundo;
-- movimiento;
-- interacción;
-- diálogo;
-- misión;
-- recompensa;
-- guardado;
-- pausa;
-- regreso al mundo.
+No son cuatro juegos ni cuatro motores. Son cuatro reglas espaciales dentro del mismo mundo.
 
-**Si falla un elemento central, se repara antes de seguir expandiendo.**
+Cada territorio se reconoce por su combinación de suelo, caminos, objetos, edificios, vegetación, vehículos, personajes, actividad, sonido, color y ritmo.
 
----
+## 8. REGLA ABSOLUTA DEL ENTRAMADO URBANO
 
-## 33. LEY DE LA SEMILLA
+Cuando Luna esté dentro del **entramado de calles**, debe sentirse que está dentro de una trama urbana.
 
-La versión semilla no debe demostrar que puede hacerlo todo.
+### En la calzada
 
-Debe demostrar que el núcleo funciona perfectamente.
+**SÍ:** calles, esquinas, cruces, vehículos, circulación, señales, veredas cuando correspondan, mobiliario urbano, iluminación, cruces peatonales y pequeños elementos propios de una calle.
 
-La semilla mínima debe permitir:
+**NO:** casas plantadas sobre la calzada, parcelas agrícolas, viñedos, grandes manchas de pasto rural, corrales, cultivos, acequias rurales atravesando calles, bardas naturales como decoración de la calle o árboles/plantas puestos al azar sin lógica urbana.
 
-**ENTRAR → CONOCER A LUNA → RECIBIR CONTEXTO → ENTRAR A VILLA PELÓN → CAMINAR → EXPLORAR → HABLAR → CUMPLIR UNA MISIÓN → APRENDER → RECIBIR UNA RECOMPENSA → GUARDAR → VOLVER.**
+**CALLE = CALLE.**
 
-Si esto funciona sólidamente, existe una base real para crecer.
+Las casas, comercios, patios y edificios pertenecen a los **bordes/lotes de la trama urbana**, no a la superficie de circulación.
 
----
+El entramado urbano prioriza líneas claras, calles reconocibles, esquinas, lotes, fachadas, tránsito, actividad humana, escala de pueblo y vegetación controlada.
 
-## 34. LEY DE FUTURO
+**No convertir la ciudad en una granja con calles dibujadas encima.**
 
-Podrán incorporarse posteriormente nuevas zonas, personajes, misiones, historias, horarios, estaciones, actividades, recuerdos, eventos y sistemas.
+## 9. REGLA ABSOLUTA DEL SECTOR RURAL
 
-Pero ninguna ampliación tiene permiso para romper el núcleo existente.
+El sector rural debe sentirse abierto, productivo y conectado con el territorio.
 
-**El futuro se adapta a la semilla. La semilla no se sacrifica por el futuro.**
+Priorizar: caminos rurales, parcelas, cultivos, viñedos, árboles productivos, canales/acequias cuando correspondan, cercos, herramientas, galpones, pequeñas construcciones rurales, vehículos de trabajo, trabajadores y animales cuando tengan función.
 
----
+**RURAL = PRODUCCIÓN + DISTANCIA + CAMINO + PAISAJE + ACTIVIDAD.**
 
-## 35. LEY CONTRA LA INFLACIÓN
+No debe parecer una plaza urbana gigante, una calle de pueblo llena de fachadas ni un bosque genérico.
 
-Ante cada propuesta nueva:
+## 10. REGLA ABSOLUTA DE LAS BARDAS
 
-> **¿Mejora el juego principal?**
+Las **bardas** tienen identidad propia. No son simplemente tierra marrón agregada al mapa.
 
-Si no mejora: **NO.**
+Priorizar: altura, desnivel, roca, tierra, sequedad, exposición, horizonte, caminos difíciles, borde del territorio y sensación de exterior.
 
-Si mejora poco y agrega mucha complejidad: **NO TODAVÍA.**
+**BARDA = RELIEVE + ARIDEZ + HORIZONTE + EXPLORACIÓN.**
 
-Si mejora claramente y puede implementarse de forma simple: **SÍ.**
+No convertir toda la barda en césped, plantar viñedos sin razón, llenarla de casas ni copiar la estética urbana.
 
----
+## 11. REGLA ABSOLUTA DE PICADA 21
 
-## 36. LEY DE LA EXPERIENCIA
+**Picada 21** es un territorio con identidad propia dentro de Villa Pelón.
 
-El jugador debe recordar:
+No debe sentirse como una calle urbana alargada ni como una chacra genérica.
 
-> "Recorrí Villa Pelón."
+Debe sentirse como un **camino/sector de conexión y exploración**.
 
-> "Conocí a ese personaje."
+Identidad: camino reconocible, tránsito limitado pero significativo, bordes naturales, cambios de paisaje, distancia, sensación de salida, puntos de referencia, personajes y vehículos vinculados al recorrido y espacios para descubrimiento.
 
-> "Encontré ese lugar."
+**PICADA 21 = RECORRIDO + DISTANCIA + CONEXIÓN + DESCUBRIMIENTO.**
 
-> "Descubrí algo que no sabía."
+No llenarla de edificios porque hay espacio. No convertirla en una segunda ciudad. No convertirla en una granja infinita.
 
-No debe recordar principalmente sistemas, menús o variables.
+## 12. REGLA DE TRANSICIONES
 
-**El sistema existe para producir una experiencia. La experiencia no existe para justificar el sistema.**
+Las zonas no deben cambiar de manera artificial. La transición debe poder leerse visualmente.
 
----
+Ejemplos: **URBANO → BORDE URBANO → RURAL → BARDA / EXTERIOR** o **URBANO → CAMINO → PICADA 21 → SECTOR DISTANTE**.
 
-# PROTOCOLO DE DECISIÓN OBLIGATORIO
+Se puede comunicar el cambio mediante suelo, vegetación, ancho de caminos, cantidad de edificios, vehículos, cercos, relieve, color, sonido y ritmo de personajes.
 
-Ante cualquier decisión futura, evaluar en este orden:
+**El jugador debe sentir el cambio antes de que el juego se lo explique.**
 
-1. ¿Hace que el juego funcione mejor?
-2. ¿Hace que jugar sea más fácil o divertido?
-3. ¿Mejora la exploración y la sensación de vida?
-4. ¿Ayuda a conocer Villa Pelón?
-5. ¿Funciona bien en teléfono y PC?
-6. ¿Puede mantenerse simple?
-7. ¿Puede probarse y repararse fácilmente?
+## 13. REGLA DE NO MEZCLA ARBITRARIA
 
-Si falla las primeras prioridades, no avanza solamente porque sea técnicamente posible.
+Un objeto no se coloca porque queda lindo. Antes se pregunta: **¿Pertenece naturalmente a este territorio?**
 
----
+Si no, no entra.
 
-# ESTADO DE CONGELAMIENTO
+**Cada elemento debe obedecer al territorio donde aparece.**
 
-**Esta Constitución Mundial queda congelada como ley maestra del repositorio.**
+## 14. REGLA DE PERSONAJES POR TERRITORIO
 
-A partir de este punto:
+Los personajes no serán clones distribuidos aleatoriamente.
 
-- las futuras implementaciones deben respetarla;
-- las nuevas funciones deben justificarse contra ella;
-- las ampliaciones del mapa deben respetarla;
-- las decisiones de arquitectura deben respetarla;
-- las decisiones visuales deben respetar la jugabilidad;
-- ninguna nueva capa puede contradecirla silenciosamente.
+**Urbano:** vecinos, comerciantes, peatones, conductores, trabajadores, familias y personas haciendo mandados.
 
-Modificar esta Constitución no es una modificación ordinaria del juego: requiere una revisión deliberada de la ley maestra y una nueva versión explícita.
+**Rural:** productores, trabajadores, encargados, familias rurales y personas vinculadas a cultivos, animales, riego y caminos.
 
-**VERSIÓN CONGELADA: 2.0 — SEMILLA / CANON VILLA PELÓN**
+**Bardas:** personajes vinculados a recorridos, observación, exploración, mantenimiento o conocimiento del territorio.
 
-> **CAMINAR PARA DESCUBRIR. VIVIR PARA CONOCER. JUGAR PARA APRENDER VILLA PELÓN.**
+**Picada 21:** personas en tránsito, conductores, viajeros, trabajadores de paso y personajes vinculados a los lugares conectados por el recorrido.
 
+Un personaje puede desplazarse entre zonas si su rutina lo justifica.
 
----
+**Ningún NPC existe solamente para llenar espacio.**
 
-# ENMIENDA SUPREMA — CANON VILLA PELÓN 2.0
+## 15. REGLA DE ESTÉTICA ÚNICA
 
-**ESTADO: BLOQUEADA E INVIOLABLE**
+Aunque cada territorio tenga identidad propia, **todo pertenece al mismo juego**.
 
-Esta enmienda forma parte de la Ley Maestra. Tiene prioridad sobre cualquier documento, código, misión, diálogo, mapa, sistema o propuesta posterior que entre en contradicción con ella.
+Misma lógica de pixel art, escala general, perspectiva, iluminación, calidad visual, colisiones, lectura de personajes e interfaz.
 
-## 37. IDENTIDAD SUPREMA DEL JUEGO
+La diferencia entre zonas proviene del contenido y la composición, no de cambiar de estilo gráfico.
 
-**Luna en Villa Pelón** es un RPG educativo de exploración y vida cotidiana, en visión pixel art, protagonizado por **Luna**.
+## 16. REGLA DE ESCALA Y TAMAÑO
 
-Luna recorre Villa Pelón, conversa, realiza mandados, ayuda a personas, descubre lugares, cumple misiones y aprende progresivamente sobre el mundo que habita.
+Personajes, vehículos, árboles, edificios, cercos, calles y objetos deben respetar una escala coherente.
 
-El aprendizaje debe ocurrir principalmente mediante la acción:
+No se permiten casas gigantes junto a personajes diminutos, vehículos del tamaño de edificios, árboles que cambian de tamaño sin motivo ni caminos imposibles para la escala de Luna.
 
-**caminar → observar → hablar → hacer → descubrir → recordar → aprender.**
+## 17. REGLA DE MAPA FUNCIONAL
 
-## 38. VILLA PELÓN ES EL ÚNICO MUNDO NOMBRADO DENTRO DEL JUEGO
+El mapa no es una ilustración.
 
-Dentro del universo jugable, la localidad se llama exclusivamente:
+Debe existir una relación clara entre: **TERRENO → CAMINO → LUGAR → PERSONA → INTERACCIÓN → MISIÓN**.
 
-**VILLA PELÓN.**
+La decoración llega después.
 
-El nombre de la localidad real que inspira el proyecto **no debe aparecer dentro del juego**.
+## 18. REGLA DE CAMINOS
 
-No podrá aparecer en:
+**Calle urbana = regular, conectada y orientada al tránsito.**
+**Camino rural = abierto, irregular y vinculado a parcelas y producción.**
+**Sendero de barda = condicionado por relieve y terreno.**
+**Picada 21 = camino de conexión y desplazamiento.**
 
-- diálogos;
-- nombres de mapas;
-- misiones;
-- carteles;
-- edificios;
-- objetos;
-- tutoriales;
-- textos de interfaz;
-- diarios;
-- recompensas;
-- créditos narrativos que describan el mundo;
-- nombres de archivos o datos que puedan terminar visibles al jugador.
+No usar un mismo camino genérico para representar todos los territorios.
 
-La inspiración real existe como base de investigación y producción, no como nombre del universo jugable.
+## 19. REGLA DE VEHÍCULOS
 
-## 39. REGLA DE DATOS REALES
+Los vehículos existen para reforzar el mundo. No serán decoración aleatoria.
 
-Los datos utilizados para construir Villa Pelón podrán estar basados en información real, comprobada y documentada de la localidad que inspira el proyecto.
+En urbano, los autos son parte visible de la lectura de la calle. En rural pueden aparecer vehículos de trabajo. En Picada 21 refuerzan el recorrido. En bardas solo aparecen si el acceso y la actividad lo justifican.
 
-Pero existe una separación obligatoria:
+**Vehículo sin función territorial = no entra.**
 
-**FUENTE REAL → INVESTIGACIÓN → TRANSFORMACIÓN → VILLA PELÓN**
+## 20. REGLA DE VEGETACIÓN
 
-Nunca:
+La vegetación no es un relleno automático.
 
-**FUENTE REAL → COPIA DIRECTA DENTRO DEL JUEGO**
+**Urbano:** controlada y asociada a veredas, patios, espacios públicos y lotes.
+**Rural:** productiva, parcelada o vinculada al paisaje.
+**Bardas:** escasa y coherente con terreno árido.
+**Picada 21:** vegetación de borde y paisaje de transición.
 
-Los datos reales sirven para dar autenticidad al mundo. La presentación final pertenece al universo ficticio de Villa Pelón.
+**No llenar todos los espacios vacíos con pasto.** El vacío también comunica territorio.
 
-## 40. PROHIBICIÓN DE INVENTAR HECHOS COMO HISTORIA REAL
+## 21. REGLA DE SONIDO Y AMBIENTE
 
-Si un dato no está verificado, no puede presentarse dentro del juego como un hecho histórico verdadero.
+Cuando se incorporen sonidos, cada territorio deberá reforzar su identidad: urbano = circulación y actividad humana; rural = trabajo, viento, producción y naturaleza; bardas = viento, amplitud y silencio; Picada 21 = desplazamiento, camino y exterior.
 
-Cada elemento de conocimiento deberá clasificarse internamente como:
+## 22. REGLA DE DENSIDAD
 
-- REAL VERIFICADO;
-- INSPIRADO EN LA REALIDAD;
-- FICCIÓN DEL UNIVERSO VILLA PELÓN.
+**URBANO:** mayor concentración de edificios, personas y tránsito.
+**RURAL:** mayor superficie abierta y producción.
+**BARDAS:** baja densidad de objetos y alta presencia del terreno.
+**PICADA 21:** baja/media densidad, con énfasis en recorrido y puntos de referencia.
 
-El jugador no necesita ver esta clasificación, pero el equipo de desarrollo sí debe conservarla.
+La densidad debe ayudar a identificar dónde está el jugador incluso sin texto.
 
-## 41. TRANSFORMACIÓN EDUCATIVA
+## 23. REGLA DE PUNTOS DE REFERENCIA
 
-Un dato real no se incorpora solamente porque sea interesante.
+Cada zona necesita pocos elementos memorables: una esquina, un edificio, un árbol, un canal, un cruce, una formación de barda, un vehículo, un mirador o un lugar asociado a un personaje.
 
-Debe responder al menos una de estas preguntas:
+**Memorable > abundante.**
 
-- ¿ayuda a comprender un lugar?
-- ¿ayuda a comprender una actividad?
-- ¿ayuda a comprender una costumbre?
-- ¿ayuda a comprender una parte de la historia?
-- ¿ayuda a comprender la naturaleza?
-- ¿ayuda a comprender el trabajo?
-- ¿ayuda a comprender la vida cotidiana?
-- ¿ayuda a resolver una misión?
+## 24. REGLA DE VIDA COTIDIANA
 
-Si no aporta aprendizaje o experiencia, no entra.
+Luna debe poder caminar, conversar, llevar objetos, recibir encargos, entregar cosas, buscar personas, ayudar, observar, descubrir, recordar y regresar.
 
-## 42. LUNA ES EL CENTRO HUMANO DEL JUEGO
+## 25. REGLA DE MISIONES
 
-Luna no es una guía turística flotante ni una enciclopedia.
+Estructura preferente: **PERSONA → NECESIDAD → RECORRIDO → ACCIÓN → DESCUBRIMIENTO → CONSECUENCIA → RECOMPENSA.**
 
-**Luna vive el mundo.**
+## 26. REGLA DE PERSONAJES
 
-Debe poder:
+No necesitamos cientos de NPC. Cada personaje importante necesita identidad, lugar, rutina, función, relación con el territorio, algo que decir y algo que hacer.
 
-- caminar;
-- hablar;
-- hacer mandados;
-- ayudar;
-- buscar;
-- entregar;
-- recibir;
-- observar;
-- equivocarse sin quedar atrapada;
-- descubrir;
-- recordar;
-- completar misiones.
+## 27. REGLA DE EDUCACIÓN
 
-La información se obtiene porque Luna hace cosas, no porque el juego obligue a leer grandes bloques de texto.
+La educación acompaña al juego. No convertir el proyecto en clase disfrazada, museo estático, enciclopedia, noticiero, directorio turístico, simulador de la localidad real, plataforma política, juego centrado en empresas reales o reproducción de personas reales.
 
-## 43. VIDA COTIDIANA ANTES QUE MECÁNICAS ARTIFICIALES
+## 28. REGLA DE IDENTIDAD OCULTA
 
-El RPG debe representar una vida cotidiana reconocible:
+La localidad real que inspira la investigación no puede aparecer accidentalmente en interfaz, diálogos, mapas, nombres de archivos visibles, errores, rutas mostradas, títulos, metadatos mostrados, mensajes de depuración visibles, contenido automático o créditos narrativos.
 
-- ir de un lugar a otro;
-- llevar objetos;
-- ayudar a alguien;
-- buscar una persona;
-- encontrar un sitio;
-- conversar;
-- descubrir un dato;
-- resolver un pequeño problema;
-- aprender cómo funciona algo.
+## 29. REGLA DE RENDIMIENTO
 
-No se agregará combate, magia, enemigos o sistemas fantásticos como eje si no existe una razón narrativa fuerte y compatible con la identidad educativa del proyecto.
+**CARGA RÁPIDA + FLUIDEZ + LEGIBILIDAD > EFECTOS ESPECTACULARES.**
 
-## 44. MISIÓN COMO VEHÍCULO DE APRENDIZAJE
+Evitar imágenes innecesariamente pesadas, animaciones gratuitas, partículas sin función y procesos permanentes innecesarios.
 
-Toda misión educativa importante debe enseñar algo sin convertirse en una clase.
+## 30. REGLA DE INTERFAZ
 
-Una misión puede enseñar mediante:
+**MENOS INTERFAZ. MÁS MUNDO.**
 
-**PERSONA → NECESIDAD → RECORRIDO → ACCIÓN → DESCUBRIMIENTO → CONSECUENCIA → RECUERDO.**
+La interfaz debe ser simple, táctil, legible, adaptable, breve y comprensible sin instrucciones largas.
 
-La recompensa no tiene que ser dinero o poder. Puede ser:
+## 31. REGLA DE ESTADOS
 
-- conocimiento;
-- acceso a un lugar;
-- confianza de un personaje;
-- un recuerdo;
-- un objeto útil;
-- una nueva misión;
-- una nueva parte del mundo.
+Estados principales: **INICIO → INTRODUCCIÓN → MUNDO → INTERACCIÓN/MISIÓN → RECOMPENSA → MUNDO**.
 
-## 45. PERSONAJES: REALIDAD COMO INSPIRACIÓN, IDENTIDAD FICTICIA COMO REGLA
+Toda interacción debe tener salida. Nunca dejar a Luna atrapada en diálogo, misión, pausa, transición o error.
 
-Los personajes pueden inspirarse en oficios, formas de vida y tipos humanos reales.
+## 32. REGLA DE GUARDADO
 
-No se debe representar a una persona real identificable como si hubiera participado en una situación ficticia sin una base y autorización apropiadas.
+El progreso debe ser simple y resistente. Guardar únicamente lo necesario: misiones, recuerdos, personajes conocidos, lugares importantes y progreso principal.
 
-Los personajes del juego deben pertenecer al universo de Villa Pelón.
+## 33. REGLA DE PRUEBA
 
-## 46. LUGARES: RECONOCIBLES SIN CONFUNDIR UNIVERSOS
+Antes de expandir: **AUDITAR → REPARAR → PROBAR → CONSOLIDAR → EXPANDIR.**
 
-Villa Pelón puede contener lugares inspirados en lugares reales.
+Cada gran cambio debe comprobar PC, móvil, controles, movimiento, colisiones, diálogos, misiones, recompensas, guardado, regreso al mundo y carga desde enlace.
 
-Pero dentro del juego:
+## 34. REGLA DE SEMILLA
 
-- tendrán identidad propia;
-- podrán tener nombres ficticios;
-- no se afirmará que son literalmente el lugar real;
-- no se copiarán datos personales ni información privada;
-- no se presentarán invenciones como registros históricos.
+**ENTRAR → CONOCER A LUNA → ENTRAR EN VILLA PELÓN → CAMINAR → EXPLORAR → HABLAR → RECIBIR MISIÓN → RECORRER → RESOLVER → APRENDER → RECOMPENSA → GUARDAR → VOLVER.**
 
-La meta es que el jugador sienta:
+## 35. REGLA DE EXPANSIÓN
 
-**“esto podría existir en Villa Pelón”**
+Una expansión debe responder: **¿Qué gana el jugador?** Si la respuesta es únicamente mapa más grande, no se agrega.
 
-y no:
+## 36. REGLA DE NO INFLACIÓN
 
-**“esto pretende ser una reproducción documental exacta de una localidad real”.**
+No crear contenido por cantidad: NPC decorativos en masa, objetos sin función, zonas vacías, edificios sin uso, sistemas innecesarios o menús que no aportan.
 
-## 47. REGLA DE INVESTIGACIÓN CONTINUA
+**Poco, reconocible, útil y vivo.**
 
-La base educativa no queda congelada para siempre.
+## 37. LEY DE CAMBIO
 
-Antes de crear contenido factual nuevo:
+Esta Constitución es la única ley mundial. Modificarla requiere identificar la contradicción, explicar por qué la regla actual ya no sirve, proponer una nueva versión, actualizar este único archivo, actualizar el resumen de referencia y probar que el juego siga funcionando.
 
-**INVESTIGAR → CONTRASTAR → CLASIFICAR → ADAPTAR → IMPLEMENTAR → PROBAR.**
+**No se crean documentos paralelos para esquivar una regla.**
 
-Las fuentes de investigación pueden vivir fuera del juego.
+## 38. PROTOCOLO DE DECISIÓN OBLIGATORIO
 
-El juego solamente recibe el contenido que haya superado ese proceso.
+Ante cualquier idea nueva:
+1. ¿Respeta el universo Villa Pelón?
+2. ¿Respeta la identidad territorial de la zona?
+3. ¿Tiene sentido espacialmente?
+4. ¿Tiene función jugable?
+5. ¿Funciona en móvil?
+6. ¿Puede resolverse con lo que ya existe?
+7. ¿Mejora la experiencia?
+8. ¿Se puede probar y reparar fácilmente?
 
-## 48. REGLA CONTRA LA DESVIACIÓN DE IDENTIDAD
+Si falla una regla inviolable, **NO ENTRA**.
 
-Quedan prohibidos los cambios que conviertan el proyecto en:
-
-- un simulador de la localidad real;
-- una copia documental directa;
-- un directorio turístico;
-- una enciclopedia;
-- un noticiero;
-- una plataforma política;
-- un juego centrado en empresas reales;
-- un juego centrado en conflictos reales;
-- una reproducción de personas reales.
-
-Puede aprender de la realidad sin dejar de ser un RPG de Villa Pelón.
-
-## 49. REGLA DE PROTAGONISMO
-
-El orden narrativo es:
-
-**LUNA → VILLA PELÓN → PERSONAJES → MISIONES → DESCUBRIMIENTOS → APRENDIZAJE.**
-
-No invertir este orden.
-
-El dato nunca debe convertirse en el protagonista.
-
-## 50. REGLA DE TONO
-
-Villa Pelón debe sentirse:
-
-- cercano;
-- curioso;
-- humano;
-- cotidiano;
-- familiar;
-- exploratorio;
-- cálido;
-- vivo;
-- educativo sin ser escolarizado.
-
-El juego puede tener misterio, sorpresa, humor y pequeños desafíos, siempre que sirvan al mundo y no rompan su identidad.
-
-## 51. REGLA DE NO CONTAMINACIÓN
-
-Ningún sistema técnico, dato, texto, nombre o asset podrá introducir accidentalmente la identidad real que inspira Villa Pelón en la experiencia visible del jugador.
-
-Esto incluye especialmente:
-
-- metadatos mostrados;
-- textos de depuración visibles;
-- títulos;
-- etiquetas;
-- nombres de zonas;
-- rutas visibles;
-- mensajes de error;
-- contenido generado automáticamente;
-- nombres de archivos cargados en pantalla.
-
-## 52. REGLA DE SEPARACIÓN ENTRE DESARROLLO Y JUEGO
-
-La documentación interna puede mencionar la localidad real utilizada como referencia de investigación.
-
-El juego publicado no.
-
-**INFORMACIÓN DE DESARROLLO ≠ INFORMACIÓN DEL UNIVERSO JUGABLE.**
-
-## 53. REGLA DE AUTENTICIDAD
-
-La autenticidad de Villa Pelón no depende de mencionar el lugar real.
-
-Depende de que:
-
-- los paisajes sean coherentes;
-- las actividades tengan sentido;
-- las relaciones humanas resulten creíbles;
-- los recorridos sean plausibles;
-- los conocimientos estén bien investigados;
-- la vida cotidiana se sienta verdadera.
-
-## 54. REGLA DE PRIORIDAD FINAL
-
-Cuando exista conflicto entre:
-
-**realismo documental, complejidad técnica, estética y jugabilidad**, prevalece:
-
-**JUGABILIDAD + IDENTIDAD DE VILLA PELÓN + APRENDIZAJE + FLUIDEZ.**
-
-Sin romper las reglas de veracidad establecidas para los datos.
-
-## 55. SELLO DE CANON
-
-Desde esta versión, el proyecto queda definido oficialmente por esta premisa:
+## 39. SELLO DEL CANON
 
 > **Luna vive en Villa Pelón.**
->
-> **Villa Pelón es el mundo del juego.**
->
-> **La realidad inspira el conocimiento.**
->
-> **La ficción construye la experiencia.**
->
-> **El jugador aprende viviendo.**
+ > **Villa Pelón es un solo mundo con territorios reconocibles.**
+ > **Cada territorio tiene sus propias reglas.**
+ > **La realidad inspira el conocimiento.**
+ > **La ficción construye la experiencia.**
+ > **El jugador aprende viviendo.**
 
----
-
-# ESTADO DE BLOQUEO 2.0
-
-Estas reglas son **INVIOLABLES** para toda implementación posterior.
-
-Una nueva función que las contradiga debe rechazarse aunque sea técnicamente posible.
-
-Una nueva idea que quiera modificar estas reglas no se implementa como una modificación común: requiere una nueva revisión formal de la Constitución Mundial y una nueva versión explícita de la ley.
-
-**CANON MUNDIAL ACTIVO: 2.0**
+**CANON MUNDIAL ACTIVO: 3.0**
+**ÚNICA FUENTE DE VERDAD: WORLD-LAW.md**
