@@ -1,8 +1,14 @@
-# LUNA EN VILLA PELÓN — VERSIÓN 1.0.0
+# LUNA EN VILLA PELÓN — VERSIÓN 1.1.0
 
-**Estado:** BASE CONSOLIDADA / CONGELADA
+**Estado:** PRIMERA EXPERIENCIA JUGABLE / AUDITADA
 
-**Fecha:** 2026-09-15
+**Fecha:** 2026-09-19
+
+## Qué cambia en 1.1.0
+
+Esta versión convierte la semilla en una primera experiencia jugable completa y refuerza el canon Villa Pelón: Luna recibe un mandado concreto, recorre el mundo, conversa con dos personajes, incorpora conocimientos sobre riego y producción rural, recibe una recompensa, guarda el progreso y puede continuar explorando.
+
+También se corrige la colisión para que la geometría del mundo sea realmente respetada por el movimiento del jugador.
 
 ## Regla de esta versión
 
