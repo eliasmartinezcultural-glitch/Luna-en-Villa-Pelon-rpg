@@ -54,6 +54,8 @@
     if(x<95||y<95||x>world.w-95||y>world.h-95)return true;
     return staticSolids.some(o=>rectHit(x,y,r,o));
   }
+  window.worldBlocked=blocked;
+
   function nearPoint(x,y,range=70){
     let best=null,d=Infinity;for(const n of npcs){const q=Math.hypot(n.x-x,n.y-y);if(q<d){d=q;best=n;}}
     return d<=range?best:null;
@@ -167,10 +169,10 @@
     if(screen!=='world'||paused||journalOpen)return;
     const n=nearPoint(player.x,player.y,72),p=nearestPlace();
     if(n){
-      if(n.id==='mateo'&&!state.mission){openBubble([{speaker:'Don Mateo',text:'Llegaste justo cuando estaba buscando un recuerdo que guardé hace muchos años.'},{speaker:'Don Mateo',text:'No necesito que encuentres todo. Necesito que aprendas a mirar el pueblo.'},{speaker:'Don Mateo',text:'Hablá con Rosa y Tomás. Ellos conocen dos partes que faltan.'}],'mission');return;}
-      if(n.id==='rosa'&&state.mission&&!state.rosa){state.rosa=true;memory('rosa-pista');save();updateJournal();openBubble([{speaker:'Rosa',text:'Las historias también viven en los caminos y en el trabajo cotidiano.'},{speaker:'Rosa',text:'Mirá qué cosas hacen reconocible a un lugar para quienes lo habitan.'}]);return;}
-      if(n.id==='tomas'&&state.mission&&!state.tomas){state.tomas=true;memory('tomas-pista');save();updateJournal();openBubble([{speaker:'Tomás',text:'El territorio cambia con el tiempo: hay cosas que estuvieron, otras que siguen y otras que construimos.'},{speaker:'Tomás',text:'Llevá esas dos ideas a Don Mateo.'}]);return;}
-      if(n.id==='mateo'&&state.mission&&state.rosa&&state.tomas&&!state.reward){state.reward=true;memory('primer-recuerdo');save();document.getElementById('objective').textContent='Misión completada';show('reward');return;}
+      if(n.id==='mateo'&&!state.mission){openBubble([{speaker:'Don Mateo',text:'Llegaste justo a tiempo. Necesito hacer un pequeño mandado y quiero que vos lo hagas.'},{speaker:'Don Mateo',text:'Llevá mi cuaderno a Rosa y a Tomás. Preguntales qué necesitan el agua y la tierra para que el trabajo de las chacras sea posible.'},{speaker:'Don Mateo',text:'No hace falta memorizar una lección. Caminá, preguntá y quedate con lo que descubras.'}],'mission');return;}
+      if(n.id==='rosa'&&state.mission&&!state.rosa){state.rosa=true;memory('rosa-pista');save();updateJournal();openBubble([{speaker:'Rosa',text:'Para trabajar la tierra hace falta agua. En Villa Pelón, los espacios de cultivo están ligados al riego y a los caminos que llevan hasta ellos.'},{speaker:'Rosa',text:'Quedate con esta idea: el agua no aparece sola en una chacra. Hay que conducirla y cuidarla.'}]);return;}
+      if(n.id==='tomas'&&state.mission&&!state.tomas){state.tomas=true;memory('tomas-pista');save();updateJournal();openBubble([{speaker:'Tomás',text:'La tierra puede dar distintos productos. En Villa Pelón vas a encontrar cultivos y también viñedos, además de otras actividades rurales.'},{speaker:'Tomás',text:'Quedate con esta idea: el territorio también se reconoce por lo que las personas producen en él.'}]);return;}
+      if(n.id==='mateo'&&state.mission&&state.rosa&&state.tomas&&!state.reward){state.reward=true;memory('primer-recuerdo');item('cuaderno-luna');save();document.getElementById('objective').textContent='Misión completada';show('reward');return;}
       if(n.id==='mateo'&&state.reward&&!state.mission2){state.mission2=true;state.chapter=2;save();updateJournal();openBubble([{speaker:'Don Mateo',text:'Ya encontraste un recuerdo. Ahora quiero que conozcas el pueblo con tus propios pasos.'},{speaker:'Don Mateo',text:'Visitá el almacén, la escuela y el puente. Abrí tu diario cuando quieras revisar lo aprendido.'}]);return;}
       if(n.id==='mateo'&&state.mission2Done&&!state.mission3){state.mission3=true;state.chapter=3;save();updateJournal();openBubble([{speaker:'Don Mateo',text:'Ahora salí del centro y mirá cómo el pueblo se une con el trabajo rural.'},{speaker:'Don Mateo',text:'Visitá la zona de chacras. Después podremos seguir hacia lugares más lejanos.'}]);return;}
       if(n.id==='rosa'||n.id==='tomas'){openBubble([{speaker:n.name,text:'Ya te di mi pista. Seguí recorriendo Villa Pelón.'}]);return;}
@@ -198,7 +200,10 @@
     r(bridge.x,bridge.y,bridge.w,bridge.h,P.wood);
     r(bridge.x+10,bridge.y+10,bridge.w-20,12,'#b58b61');
     for(let x=bridge.x+20;x<bridge.x+bridge.w-10;x+=28)r(x,bridge.y,8,bridge.h,'#634936');
-    fields.forEach(field);buildings.forEach(house);fence(120,820,300);fence(120,820,300,true);fence(890,1230,360);fence(2460,1230,450);trees.forEach(t=>tree(...t));
+    fields.forEach(field);
+    /* Acequias visuales: recuerdan que el paisaje productivo depende del riego. */
+    [[150,1160,270],[500,1195,360],[980,1225,230],[1580,1210,190],[2480,1210,350]].forEach(([x,y,w])=>{r(x,y,w,8,P.water2);r(x,y+8,w,3,P.dirt);});
+    buildings.forEach(house);fence(120,820,300);fence(120,820,300,true);fence(890,1230,360);fence(2460,1230,450);trees.forEach(t=>tree(...t));
     r(250,500,8,50,P.wood);r(230,480,70,22,P.gold);r(1990,1310,60,22,P.gold);r(2010,1330,8,50,P.wood);
   }
   function drawMarker(){
