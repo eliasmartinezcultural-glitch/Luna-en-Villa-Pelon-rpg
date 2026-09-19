@@ -1,9 +1,9 @@
 const $ = id => document.getElementById(id);
 
-/* LUNA EN VILLA PELÓN — MOTOR CONSOLIDADO V1.0.0
+/* LUNA EN VILLA PELÓN — MOTOR CONSOLIDADO V1.2.0
  * Esta versión prioriza estabilidad, recuperación y compatibilidad web.
  */
-const PRODUCT_VERSION = 'V1.0.0';
+const PRODUCT_VERSION = 'V1.2.0';
 const SAVE_KEY = 'lunaVillaPelon';
 const SAVE_VERSION = 4;
 const AUTOSAVE_MS = 12000;
