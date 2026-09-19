@@ -37,5 +37,17 @@ Las reglas completas están en WORLD-LAW.md.
 
 > **Luna vive en Villa Pelón. La realidad inspira el conocimiento. La ficción construye la experiencia. El jugador aprende viviendo.**
 
-**CANON MUNDIAL ACTIVO: 3.0**
+**CANON MUNDIAL ACTIVO: 4.0**
 **ÚNICA FUENTE DE VERDAD: WORLD-LAW.md**
+
+## MAPA MAESTRO
+
+**URBANO → BORDE → RURAL + BODEGAS + BARDAS → CAMINO RURAL → PICADA 21 (EXTREMO LEJANO)**
+
+El **RÍO** es un territorio propio: agua, peces, pescadores, orillas y puentes. Sin casas, granjas ni fauna terrestre dentro del río.
+
+El urbano permanece concentrado; el rural ocupa la zona intermedia productiva; las bardas aportan relieve y exploración; Picada 21 es el destino lejano conectado por camino rural.
+
+Las reglas completas y únicas están en **WORLD-LAW.md**.
+
+**CANON MUNDIAL ACTIVO: 4.0**
