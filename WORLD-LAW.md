@@ -333,3 +333,357 @@ Si falla una regla inviolable, **NO ENTRA**.
 
 **CANON MUNDIAL ACTIVO: 3.0**
 **ÚNICA FUENTE DE VERDAD: WORLD-LAW.md**
+
+## 40. LEY ABSOLUTA DEL RÍO
+
+El **río** es un territorio propio de Villa Pelón y debe reconocerse inmediatamente como tal.
+
+El río no es una extensión del sector rural, no es un parque, no es una calle y no es un espacio para rellenar con decoración.
+
+**RÍO = AGUA + PECES + PESCADORES + CRUCES + PUENTES + ORILLA.**
+
+### En el agua
+
+**SÍ:**
+- agua;
+- peces;
+- movimiento visual del agua;
+- reflejos o pequeñas variaciones;
+- elementos mínimos propios del cauce.
+
+**NO:**
+- casas;
+- granjas;
+- animales terrestres;
+- corrales;
+- árboles plantados dentro del agua;
+- vehículos circulando por el agua;
+- edificios;
+- cultivos;
+- objetos urbanos.
+
+### En la ribera
+
+La ribera debe mantenerse limpia y legible.
+
+Puede contener únicamente elementos que tengan relación directa con el río, sus accesos o el cruce:
+- pescadores;
+- puntos de pesca;
+- caminos de acceso;
+- vegetación coherente de borde;
+- elementos mínimos de seguridad o señalización cuando sean necesarios;
+- accesos a puentes.
+
+**No convertir la costa en una segunda ciudad ni en una granja.**
+
+### Puentes
+
+Los puentes son los puntos de conexión entre sectores.
+
+Un puente debe tener:
+- estructura claramente reconocible;
+- acceso desde caminos;
+- recorrido atravesable;
+- lógica de conexión territorial.
+
+**PUENTE = CRUCE.**
+
+No colocar puentes decorativos sin función.
+
+### Regla de vida
+
+En el río no habrá fauna terrestre decorativa.
+
+La fauna visible propia del cauce se limita al concepto de **peces**. Los pescadores son los personajes principales de actividad humana del río.
+
+**RÍO ≠ ZOOLÓGICO.**
+
+---
+
+## 41. MAPA ESTRUCTURAL MAESTRO
+
+Villa Pelón tendrá una estructura territorial deliberada.
+
+No construiremos el mapa como una colección de escenas aisladas.
+
+La organización general queda fijada así:
+
+**[ENTRAMADO URBANO] → [BORDE / CONEXIONES] → [SECTOR RURAL + BODEGAS + BARDA] → [CALLE RURAL / CORREDOR] → [PICADA 21]**
+
+Y el **RÍO** funciona como gran límite/elemento territorial de referencia y se conecta mediante los puntos de cruce establecidos.
+
+### SECTOR 1 — URBANO FIJO
+
+El entramado urbano ocupa un sector definido y reconocible del mundo.
+
+Debe concentrar:
+- calles;
+- esquinas;
+- casas y edificios en sus lotes;
+- comercios;
+- vecinos;
+- autos;
+- servicios;
+- plazas o espacios públicos cuando tengan función;
+- vida cotidiana.
+
+**El urbano no se dispersa artificialmente por todo el mapa.**
+
+Fuera de este sector, la densidad urbana disminuye progresivamente.
+
+Regla:
+
+**URBANO = NÚCLEO.**
+
+---
+
+### SECTOR 2 — ZONA INTERMEDIA PRODUCTIVA
+
+Entre el urbano y los sectores más alejados existe una zona de transición productiva.
+
+Aquí se concentran:
+- chacras;
+- parcelas;
+- cultivos;
+- viñedos;
+- canales y acequias;
+- caminos rurales;
+- galpones;
+- bodegas;
+- trabajadores;
+- vehículos de trabajo;
+- pequeños puntos de actividad productiva.
+
+Este es el corazón territorial del juego.
+
+**RURAL = ESPACIO ABIERTO + PRODUCCIÓN + CAMINOS.**
+
+Las bodegas pertenecen principalmente a esta lógica productiva y no deben transformar el sector rural en una zona urbana.
+
+---
+
+### SECTOR 3 — BARDAS
+
+Las bardas se ubican dentro del gran territorio exterior/intermedio y funcionan como contraste físico del sector productivo.
+
+Su función es:
+- cambiar el relieve;
+- abrir el horizonte;
+- permitir exploración;
+- crear desniveles;
+- ofrecer puntos de observación;
+- separar visualmente determinados sectores.
+
+Las bardas no se llenan de construcciones.
+
+**BARDA = TERRENO.**
+
+---
+
+### SECTOR 4 — CORREDOR HACIA PICADA 21
+
+El acceso hacia Picada 21 se realiza mediante una **calle/camino rural de conexión**.
+
+Este corredor debe conservar la lógica de circulación de un camino de conexión:
+- trazado reconocible;
+- bordes territoriales;
+- tránsito;
+- puntos de referencia;
+- continuidad;
+- salida progresiva del sector rural.
+
+No debe transformarse en una calle urbana.
+
+No debe llenarse de casas.
+
+No debe convertirse en una granja continua.
+
+Su función es hacer sentir:
+
+**RURAL → SALIDA → RECORRIDO → PICADA 21.**
+
+---
+
+### SECTOR 5 — PICADA 21 EN EL EXTREMO MÁS LEJANO
+
+Picada 21 queda fijada como el **extremo más lejano del recorrido principal**.
+
+Esto no significa que sea un mapa separado.
+
+Debe sentirse que Luna llegó allí recorriendo territorio.
+
+La secuencia espacial principal queda:
+
+**URBANO → RURAL → CORREDOR RURAL → PICADA 21.**
+
+Picada 21 debe tener:
+- menor densidad;
+- sensación de distancia;
+- puntos de referencia;
+- tránsito limitado pero significativo;
+- paisaje de borde;
+- continuidad de camino;
+- espacios de descubrimiento.
+
+**PICADA 21 ES EL DESTINO LEJANO DEL RECORRIDO PRINCIPAL.**
+
+---
+
+## 42. LEY DE EJES Y CONEXIONES
+
+El mapa debe organizarse mediante pocos ejes comprensibles.
+
+No se crearán laberintos artificiales.
+
+### Eje principal
+
+**URBANO → CAMINO RURAL → PICADA 21**
+
+Este eje permite comprender el mundo de un vistazo.
+
+### Eje productivo
+
+Desde el urbano se abren caminos hacia:
+- chacras;
+- viñedos;
+- bodegas;
+- canales;
+- sectores rurales.
+
+### Eje del río
+
+El río funciona como borde territorial y puede conectarse con el resto del mundo mediante caminos y puentes.
+
+### Eje de bardas
+
+Las bardas generan contraste de relieve y exploración respecto del sector productivo.
+
+**POCOS EJES + BUENOS PUNTOS DE REFERENCIA > LABERINTO GRANDE.**
+
+---
+
+## 43. LEY DE JERARQUÍA TERRITORIAL
+
+Cada espacio debe responder a una jerarquía:
+
+**NÚCLEO → TRANSICIÓN → TERRITORIO → DESTINO.**
+
+Ejemplo:
+
+**URBANO → BORDE → RURAL → PICADA 21.**
+
+El río no rompe esta lógica: actúa como un gran elemento natural y sus puentes son conexiones puntuales.
+
+Esto evita que todo el mapa tenga la misma importancia.
+
+---
+
+## 44. LEY DE DISTANCIA
+
+La distancia debe sentirse.
+
+No alcanza con poner un cartel que diga "lejos".
+
+El jugador debe experimentar la distancia mediante:
+- tiempo de recorrido;
+- cambio de paisaje;
+- reducción de densidad;
+- cambios en el camino;
+- puntos de referencia;
+- aparición progresiva de nuevos territorios.
+
+**Si Picada 21 es el extremo lejano, el viaje hasta ella debe sentirse como viaje.**
+
+---
+
+## 45. LEY DE COHERENCIA DEL MAPA
+
+Antes de agregar una construcción, personaje, árbol, vehículo, animal, camino o decoración se debe identificar:
+
+**¿En qué sector del mapa vive?**
+
+Si no pertenece claramente a:
+- urbano;
+- rural;
+- barda;
+- río;
+- corredor;
+- Picada 21;
+
+no se agrega.
+
+Esta regla impide que el mapa termine siendo una mezcla de elementos.
+
+---
+
+## 46. MAPA CONCEPTUAL BLOQUEADO
+
+La distribución conceptual de referencia queda fijada así:
+
+```
+                    EXTREMO LEJANO
+                         │
+                     PICADA 21
+                         │
+                CALLE / CAMINO RURAL
+                         │
+              ┌──────────┴──────────┐
+              │                     │
+           BARDAS             SECTOR RURAL
+              │             CHACRAS / VIÑEDOS
+              │                BODEGAS
+              │              CANALES / CAMINOS
+              └──────────┬──────────┘
+                         │
+                    BORDE URBANO
+                         │
+                 ENTRAMADO URBANO
+                 CALLES / CASAS
+                 COMERCIOS / AUTOS
+                         │
+                         │
+                CONEXIONES AL RÍO
+                         │
+                ~~~~~~~~~~~~~~~~~
+                    RÍO
+             PECES / PESCADORES
+                 PUENTES
+                ~~~~~~~~~~~~~~~~~
+```
+
+Este esquema es **estructural**, no una coordenada gráfica definitiva.
+
+La posición exacta de cada elemento podrá cambiar por jugabilidad, pero la **jerarquía territorial no cambia** sin modificar formalmente el canon.
+
+---
+
+## 47. REGLA DE REALISMO ESPACIAL
+
+La investigación territorial respalda que el paisaje productivo combina parcelas, caminos rurales, áreas de producción y conexiones con el núcleo urbano; también existe una relación territorial con el río. Por eso el juego puede utilizar esa lógica como inspiración, pero siempre transformándola en Villa Pelón y sin convertirla en una copia documental. citeturn0search12turn0search1
+
+La investigación sirve para construir coherencia.
+
+**No sirve para convertir el juego en un mapa real.**
+
+---
+
+## 48. REGLA DE AUDITORÍA CARTOGRÁFICA
+
+Antes de construir cada nueva parte del mapa se debe comprobar:
+
+- ¿Sé exactamente en qué territorio estoy?
+- ¿La zona tiene identidad propia?
+- ¿Los objetos pertenecen a ella?
+- ¿El camino tiene función?
+- ¿La transición se entiende?
+- ¿La distancia se siente?
+- ¿El río sigue siendo río?
+- ¿Picada 21 sigue siendo el extremo lejano?
+- ¿El urbano sigue concentrado?
+- ¿El rural sigue siendo rural?
+- ¿Las bardas siguen siendo terreno?
+- ¿Las bodegas siguen perteneciendo al mundo productivo?
+
+Si una respuesta es no, primero se corrige el mapa.
+
+**No se tapa el problema agregando decoración.**
