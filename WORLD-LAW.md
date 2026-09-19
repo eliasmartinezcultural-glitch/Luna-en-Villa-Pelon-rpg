@@ -594,6 +594,305 @@ A partir de este punto:
 
 Modificar esta Constitución no es una modificación ordinaria del juego: requiere una revisión deliberada de la ley maestra y una nueva versión explícita.
 
-**VERSIÓN CONGELADA: 1.0 — SEMILLA**
+**VERSIÓN CONGELADA: 2.0 — SEMILLA / CANON VILLA PELÓN**
 
 > **CAMINAR PARA DESCUBRIR. VIVIR PARA CONOCER. JUGAR PARA APRENDER VILLA PELÓN.**
+
+
+---
+
+# ENMIENDA SUPREMA — CANON VILLA PELÓN 2.0
+
+**ESTADO: BLOQUEADA E INVIOLABLE**
+
+Esta enmienda forma parte de la Ley Maestra. Tiene prioridad sobre cualquier documento, código, misión, diálogo, mapa, sistema o propuesta posterior que entre en contradicción con ella.
+
+## 37. IDENTIDAD SUPREMA DEL JUEGO
+
+**Luna en Villa Pelón** es un RPG educativo de exploración y vida cotidiana, en visión pixel art, protagonizado por **Luna**.
+
+Luna recorre Villa Pelón, conversa, realiza mandados, ayuda a personas, descubre lugares, cumple misiones y aprende progresivamente sobre el mundo que habita.
+
+El aprendizaje debe ocurrir principalmente mediante la acción:
+
+**caminar → observar → hablar → hacer → descubrir → recordar → aprender.**
+
+## 38. VILLA PELÓN ES EL ÚNICO MUNDO NOMBRADO DENTRO DEL JUEGO
+
+Dentro del universo jugable, la localidad se llama exclusivamente:
+
+**VILLA PELÓN.**
+
+El nombre de la localidad real que inspira el proyecto **no debe aparecer dentro del juego**.
+
+No podrá aparecer en:
+
+- diálogos;
+- nombres de mapas;
+- misiones;
+- carteles;
+- edificios;
+- objetos;
+- tutoriales;
+- textos de interfaz;
+- diarios;
+- recompensas;
+- créditos narrativos que describan el mundo;
+- nombres de archivos o datos que puedan terminar visibles al jugador.
+
+La inspiración real existe como base de investigación y producción, no como nombre del universo jugable.
+
+## 39. REGLA DE DATOS REALES
+
+Los datos utilizados para construir Villa Pelón podrán estar basados en información real, comprobada y documentada de la localidad que inspira el proyecto.
+
+Pero existe una separación obligatoria:
+
+**FUENTE REAL → INVESTIGACIÓN → TRANSFORMACIÓN → VILLA PELÓN**
+
+Nunca:
+
+**FUENTE REAL → COPIA DIRECTA DENTRO DEL JUEGO**
+
+Los datos reales sirven para dar autenticidad al mundo. La presentación final pertenece al universo ficticio de Villa Pelón.
+
+## 40. PROHIBICIÓN DE INVENTAR HECHOS COMO HISTORIA REAL
+
+Si un dato no está verificado, no puede presentarse dentro del juego como un hecho histórico verdadero.
+
+Cada elemento de conocimiento deberá clasificarse internamente como:
+
+- REAL VERIFICADO;
+- INSPIRADO EN LA REALIDAD;
+- FICCIÓN DEL UNIVERSO VILLA PELÓN.
+
+El jugador no necesita ver esta clasificación, pero el equipo de desarrollo sí debe conservarla.
+
+## 41. TRANSFORMACIÓN EDUCATIVA
+
+Un dato real no se incorpora solamente porque sea interesante.
+
+Debe responder al menos una de estas preguntas:
+
+- ¿ayuda a comprender un lugar?
+- ¿ayuda a comprender una actividad?
+- ¿ayuda a comprender una costumbre?
+- ¿ayuda a comprender una parte de la historia?
+- ¿ayuda a comprender la naturaleza?
+- ¿ayuda a comprender el trabajo?
+- ¿ayuda a comprender la vida cotidiana?
+- ¿ayuda a resolver una misión?
+
+Si no aporta aprendizaje o experiencia, no entra.
+
+## 42. LUNA ES EL CENTRO HUMANO DEL JUEGO
+
+Luna no es una guía turística flotante ni una enciclopedia.
+
+**Luna vive el mundo.**
+
+Debe poder:
+
+- caminar;
+- hablar;
+- hacer mandados;
+- ayudar;
+- buscar;
+- entregar;
+- recibir;
+- observar;
+- equivocarse sin quedar atrapada;
+- descubrir;
+- recordar;
+- completar misiones.
+
+La información se obtiene porque Luna hace cosas, no porque el juego obligue a leer grandes bloques de texto.
+
+## 43. VIDA COTIDIANA ANTES QUE MECÁNICAS ARTIFICIALES
+
+El RPG debe representar una vida cotidiana reconocible:
+
+- ir de un lugar a otro;
+- llevar objetos;
+- ayudar a alguien;
+- buscar una persona;
+- encontrar un sitio;
+- conversar;
+- descubrir un dato;
+- resolver un pequeño problema;
+- aprender cómo funciona algo.
+
+No se agregará combate, magia, enemigos o sistemas fantásticos como eje si no existe una razón narrativa fuerte y compatible con la identidad educativa del proyecto.
+
+## 44. MISIÓN COMO VEHÍCULO DE APRENDIZAJE
+
+Toda misión educativa importante debe enseñar algo sin convertirse en una clase.
+
+Una misión puede enseñar mediante:
+
+**PERSONA → NECESIDAD → RECORRIDO → ACCIÓN → DESCUBRIMIENTO → CONSECUENCIA → RECUERDO.**
+
+La recompensa no tiene que ser dinero o poder. Puede ser:
+
+- conocimiento;
+- acceso a un lugar;
+- confianza de un personaje;
+- un recuerdo;
+- un objeto útil;
+- una nueva misión;
+- una nueva parte del mundo.
+
+## 45. PERSONAJES: REALIDAD COMO INSPIRACIÓN, IDENTIDAD FICTICIA COMO REGLA
+
+Los personajes pueden inspirarse en oficios, formas de vida y tipos humanos reales.
+
+No se debe representar a una persona real identificable como si hubiera participado en una situación ficticia sin una base y autorización apropiadas.
+
+Los personajes del juego deben pertenecer al universo de Villa Pelón.
+
+## 46. LUGARES: RECONOCIBLES SIN CONFUNDIR UNIVERSOS
+
+Villa Pelón puede contener lugares inspirados en lugares reales.
+
+Pero dentro del juego:
+
+- tendrán identidad propia;
+- podrán tener nombres ficticios;
+- no se afirmará que son literalmente el lugar real;
+- no se copiarán datos personales ni información privada;
+- no se presentarán invenciones como registros históricos.
+
+La meta es que el jugador sienta:
+
+**“esto podría existir en Villa Pelón”**
+
+y no:
+
+**“esto pretende ser una reproducción documental exacta de una localidad real”.**
+
+## 47. REGLA DE INVESTIGACIÓN CONTINUA
+
+La base educativa no queda congelada para siempre.
+
+Antes de crear contenido factual nuevo:
+
+**INVESTIGAR → CONTRASTAR → CLASIFICAR → ADAPTAR → IMPLEMENTAR → PROBAR.**
+
+Las fuentes de investigación pueden vivir fuera del juego.
+
+El juego solamente recibe el contenido que haya superado ese proceso.
+
+## 48. REGLA CONTRA LA DESVIACIÓN DE IDENTIDAD
+
+Quedan prohibidos los cambios que conviertan el proyecto en:
+
+- un simulador de la localidad real;
+- una copia documental directa;
+- un directorio turístico;
+- una enciclopedia;
+- un noticiero;
+- una plataforma política;
+- un juego centrado en empresas reales;
+- un juego centrado en conflictos reales;
+- una reproducción de personas reales.
+
+Puede aprender de la realidad sin dejar de ser un RPG de Villa Pelón.
+
+## 49. REGLA DE PROTAGONISMO
+
+El orden narrativo es:
+
+**LUNA → VILLA PELÓN → PERSONAJES → MISIONES → DESCUBRIMIENTOS → APRENDIZAJE.**
+
+No invertir este orden.
+
+El dato nunca debe convertirse en el protagonista.
+
+## 50. REGLA DE TONO
+
+Villa Pelón debe sentirse:
+
+- cercano;
+- curioso;
+- humano;
+- cotidiano;
+- familiar;
+- exploratorio;
+- cálido;
+- vivo;
+- educativo sin ser escolarizado.
+
+El juego puede tener misterio, sorpresa, humor y pequeños desafíos, siempre que sirvan al mundo y no rompan su identidad.
+
+## 51. REGLA DE NO CONTAMINACIÓN
+
+Ningún sistema técnico, dato, texto, nombre o asset podrá introducir accidentalmente la identidad real que inspira Villa Pelón en la experiencia visible del jugador.
+
+Esto incluye especialmente:
+
+- metadatos mostrados;
+- textos de depuración visibles;
+- títulos;
+- etiquetas;
+- nombres de zonas;
+- rutas visibles;
+- mensajes de error;
+- contenido generado automáticamente;
+- nombres de archivos cargados en pantalla.
+
+## 52. REGLA DE SEPARACIÓN ENTRE DESARROLLO Y JUEGO
+
+La documentación interna puede mencionar la localidad real utilizada como referencia de investigación.
+
+El juego publicado no.
+
+**INFORMACIÓN DE DESARROLLO ≠ INFORMACIÓN DEL UNIVERSO JUGABLE.**
+
+## 53. REGLA DE AUTENTICIDAD
+
+La autenticidad de Villa Pelón no depende de mencionar el lugar real.
+
+Depende de que:
+
+- los paisajes sean coherentes;
+- las actividades tengan sentido;
+- las relaciones humanas resulten creíbles;
+- los recorridos sean plausibles;
+- los conocimientos estén bien investigados;
+- la vida cotidiana se sienta verdadera.
+
+## 54. REGLA DE PRIORIDAD FINAL
+
+Cuando exista conflicto entre:
+
+**realismo documental, complejidad técnica, estética y jugabilidad**, prevalece:
+
+**JUGABILIDAD + IDENTIDAD DE VILLA PELÓN + APRENDIZAJE + FLUIDEZ.**
+
+Sin romper las reglas de veracidad establecidas para los datos.
+
+## 55. SELLO DE CANON
+
+Desde esta versión, el proyecto queda definido oficialmente por esta premisa:
+
+> **Luna vive en Villa Pelón.**
+>
+> **Villa Pelón es el mundo del juego.**
+>
+> **La realidad inspira el conocimiento.**
+>
+> **La ficción construye la experiencia.**
+>
+> **El jugador aprende viviendo.**
+
+---
+
+# ESTADO DE BLOQUEO 2.0
+
+Estas reglas son **INVIOLABLES** para toda implementación posterior.
+
+Una nueva función que las contradiga debe rechazarse aunque sea técnicamente posible.
+
+Una nueva idea que quiera modificar estas reglas no se implementa como una modificación común: requiere una nueva revisión formal de la Constitución Mundial y una nueva versión explícita de la ley.
+
+**CANON MUNDIAL ACTIVO: 2.0**
