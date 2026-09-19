@@ -62,3 +62,18 @@ El tamaño puede cambiar. La regla no: **primero densidad de experiencia, despu�
 ## CAMBIO DE LEY
 
 Modificar `WORLD-LAW.md` requiere una revisión deliberada y una nueva versión explícita. No se considera una edición ordinaria del juego.
+
+
+## CANON SUPREMO 2.0 — BLOQUEADO
+
+- El universo jugable se llama exclusivamente **Villa Pelón**.
+- La localidad real que inspira la investigación no aparece dentro del juego.
+- Los datos pueden basarse en información real, pero deben investigarse, verificarse, clasificarse y transformarse antes de entrar al juego.
+- Luna es la protagonista y vive las misiones mediante acciones, recorridos, conversaciones, mandados y descubrimientos.
+- La educación ocurre a través del juego; no se convierte en una enciclopedia ni en una clase disfrazada.
+- El juego debe preservar la separación entre documentación de desarrollo y universo jugable.
+- Estas reglas son inviolables salvo una nueva revisión formal de la Constitución Mundial.
+
+**CANON MUNDIAL ACTIVO: 2.0**
+
+> **Luna vive en Villa Pelón. La realidad inspira el conocimiento. La ficción construye la experiencia. El jugador aprende viviendo.**
